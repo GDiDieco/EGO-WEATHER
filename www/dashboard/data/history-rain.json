@@ -1,0 +1,3485 @@
+{
+  "provider": {
+    "id": "weewx-history",
+    "name": "WeeWX MariaDB"
+  },
+  "status": {
+    "ok": true,
+    "partial": false,
+    "stale": false,
+    "message": null,
+    "lastSuccess": "2026-04-05T08:11:06"
+  },
+  "updated": "2026-04-05T08:11:06",
+  "metric": "rain",
+  "unit_system_input": "US",
+  "unit_system_output": "METRIC",
+  "ranges": {
+    "24h": {
+      "points": [
+        {
+          "ts": 1775296800,
+          "time": "2026-04-04T12:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775300400,
+          "time": "2026-04-04T13:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775304000,
+          "time": "2026-04-04T14:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775307600,
+          "time": "2026-04-04T15:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775311200,
+          "time": "2026-04-04T16:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775314800,
+          "time": "2026-04-04T17:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775318400,
+          "time": "2026-04-04T18:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775322000,
+          "time": "2026-04-04T19:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775325600,
+          "time": "2026-04-04T20:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775329200,
+          "time": "2026-04-04T21:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775332800,
+          "time": "2026-04-04T22:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775336400,
+          "time": "2026-04-04T23:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775340000,
+          "time": "2026-04-05T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775343600,
+          "time": "2026-04-05T01:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775347200,
+          "time": "2026-04-05T02:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775350800,
+          "time": "2026-04-05T03:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775354400,
+          "time": "2026-04-05T04:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775358000,
+          "time": "2026-04-05T05:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775361600,
+          "time": "2026-04-05T06:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775365200,
+          "time": "2026-04-05T07:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1775368800,
+          "time": "2026-04-05T08:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        }
+      ]
+    },
+    "7d": {
+      "points": [
+        {
+          "ts": 1774742400,
+          "time": "2026-03-29T01:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1774828800,
+          "time": "2026-03-30T02:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0
+        },
+        {
+          "ts": 1774915200,
+          "time": "2026-03-31T02:00:00+02:00",
+          "rain_mm": 1.96,
+          "rain_rate_max_mm_h": 3.22,
+          "rain_cumulative_mm": 1.96
+        },
+        {
+          "ts": 1775260800,
+          "time": "2026-04-04T02:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 1.96
+        },
+        {
+          "ts": 1775347200,
+          "time": "2026-04-05T02:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 1.96
+        }
+      ]
+    },
+    "30d": {
+      "points": [
+        {
+          "ts": 1772777700,
+          "time": "2026-03-06T07:15:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0,
+          "day": "2026-03-06"
+        },
+        {
+          "ts": 1772838000,
+          "time": "2026-03-07T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0,
+          "day": "2026-03-07"
+        },
+        {
+          "ts": 1772924400,
+          "time": "2026-03-08T00:00:00+01:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 2.02,
+          "rain_cumulative_mm": 0.56,
+          "day": "2026-03-08"
+        },
+        {
+          "ts": 1773010800,
+          "time": "2026-03-09T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.56,
+          "day": "2026-03-09"
+        },
+        {
+          "ts": 1773097200,
+          "time": "2026-03-10T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.56,
+          "day": "2026-03-10"
+        },
+        {
+          "ts": 1773183600,
+          "time": "2026-03-11T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.56,
+          "day": "2026-03-11"
+        },
+        {
+          "ts": 1773270000,
+          "time": "2026-03-12T00:00:00+01:00",
+          "rain_mm": 26.54,
+          "rain_rate_max_mm_h": 13.35,
+          "rain_cumulative_mm": 27.1,
+          "day": "2026-03-12"
+        },
+        {
+          "ts": 1773356400,
+          "time": "2026-03-13T00:00:00+01:00",
+          "rain_mm": 1.96,
+          "rain_rate_max_mm_h": 3.8,
+          "rain_cumulative_mm": 29.06,
+          "day": "2026-03-13"
+        },
+        {
+          "ts": 1773442800,
+          "time": "2026-03-14T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.06,
+          "day": "2026-03-14"
+        },
+        {
+          "ts": 1773529200,
+          "time": "2026-03-15T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.06,
+          "day": "2026-03-15"
+        },
+        {
+          "ts": 1773615600,
+          "time": "2026-03-16T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.06,
+          "day": "2026-03-16"
+        },
+        {
+          "ts": 1773702000,
+          "time": "2026-03-17T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.06,
+          "day": "2026-03-17"
+        },
+        {
+          "ts": 1773788400,
+          "time": "2026-03-18T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.06,
+          "day": "2026-03-18"
+        },
+        {
+          "ts": 1773874800,
+          "time": "2026-03-19T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.06,
+          "day": "2026-03-19"
+        },
+        {
+          "ts": 1773961200,
+          "time": "2026-03-20T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.06,
+          "day": "2026-03-20"
+        },
+        {
+          "ts": 1774047600,
+          "time": "2026-03-21T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.06,
+          "day": "2026-03-21"
+        },
+        {
+          "ts": 1774134000,
+          "time": "2026-03-22T00:00:00+01:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 1.51,
+          "rain_cumulative_mm": 29.62,
+          "day": "2026-03-22"
+        },
+        {
+          "ts": 1774220400,
+          "time": "2026-03-23T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.62,
+          "day": "2026-03-23"
+        },
+        {
+          "ts": 1774306800,
+          "time": "2026-03-24T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.62,
+          "day": "2026-03-24"
+        },
+        {
+          "ts": 1774393200,
+          "time": "2026-03-25T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 29.9,
+          "day": "2026-03-25"
+        },
+        {
+          "ts": 1774479600,
+          "time": "2026-03-26T00:00:00+01:00",
+          "rain_mm": 8.38,
+          "rain_rate_max_mm_h": 9.7,
+          "rain_cumulative_mm": 38.28,
+          "day": "2026-03-26"
+        },
+        {
+          "ts": 1774566000,
+          "time": "2026-03-27T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 38.28,
+          "day": "2026-03-27"
+        },
+        {
+          "ts": 1774652400,
+          "time": "2026-03-28T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 38.28,
+          "day": "2026-03-28"
+        },
+        {
+          "ts": 1774738800,
+          "time": "2026-03-29T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 38.28,
+          "day": "2026-03-29"
+        },
+        {
+          "ts": 1774821600,
+          "time": "2026-03-30T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 38.28,
+          "day": "2026-03-30"
+        },
+        {
+          "ts": 1774908000,
+          "time": "2026-03-31T00:00:00+02:00",
+          "rain_mm": 1.96,
+          "rain_rate_max_mm_h": 3.22,
+          "rain_cumulative_mm": 40.24,
+          "day": "2026-03-31"
+        },
+        {
+          "ts": 1775298600,
+          "time": "2026-04-04T12:30:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 40.24,
+          "day": "2026-04-04"
+        },
+        {
+          "ts": 1775340000,
+          "time": "2026-04-05T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 40.24,
+          "day": "2026-04-05"
+        }
+      ]
+    },
+    "1y": {
+      "points": [
+        {
+          "ts": 1743833700,
+          "time": "2025-04-05T08:15:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0,
+          "day": "2025-04-05"
+        },
+        {
+          "ts": 1743890400,
+          "time": "2025-04-06T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0,
+          "day": "2025-04-06"
+        },
+        {
+          "ts": 1743976800,
+          "time": "2025-04-07T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0,
+          "day": "2025-04-07"
+        },
+        {
+          "ts": 1744063200,
+          "time": "2025-04-08T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.0,
+          "day": "2025-04-08"
+        },
+        {
+          "ts": 1744149600,
+          "time": "2025-04-09T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 0.28,
+          "day": "2025-04-09"
+        },
+        {
+          "ts": 1744236000,
+          "time": "2025-04-10T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.28,
+          "day": "2025-04-10"
+        },
+        {
+          "ts": 1744322400,
+          "time": "2025-04-11T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.28,
+          "day": "2025-04-11"
+        },
+        {
+          "ts": 1744408800,
+          "time": "2025-04-12T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 0.28,
+          "day": "2025-04-12"
+        },
+        {
+          "ts": 1744495200,
+          "time": "2025-04-13T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 0.56,
+          "day": "2025-04-13"
+        },
+        {
+          "ts": 1744581600,
+          "time": "2025-04-14T00:00:00+02:00",
+          "rain_mm": 2.51,
+          "rain_rate_max_mm_h": 2.24,
+          "rain_cumulative_mm": 3.07,
+          "day": "2025-04-14"
+        },
+        {
+          "ts": 1744668000,
+          "time": "2025-04-15T00:00:00+02:00",
+          "rain_mm": 7.82,
+          "rain_rate_max_mm_h": 6.04,
+          "rain_cumulative_mm": 10.89,
+          "day": "2025-04-15"
+        },
+        {
+          "ts": 1744754400,
+          "time": "2025-04-16T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 10.89,
+          "day": "2025-04-16"
+        },
+        {
+          "ts": 1744840800,
+          "time": "2025-04-17T00:00:00+02:00",
+          "rain_mm": 11.73,
+          "rain_rate_max_mm_h": 8.94,
+          "rain_cumulative_mm": 22.62,
+          "day": "2025-04-17"
+        },
+        {
+          "ts": 1744927200,
+          "time": "2025-04-18T00:00:00+02:00",
+          "rain_mm": 1.4,
+          "rain_rate_max_mm_h": 3.09,
+          "rain_cumulative_mm": 24.02,
+          "day": "2025-04-18"
+        },
+        {
+          "ts": 1745013600,
+          "time": "2025-04-19T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 24.02,
+          "day": "2025-04-19"
+        },
+        {
+          "ts": 1745100000,
+          "time": "2025-04-20T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 24.02,
+          "day": "2025-04-20"
+        },
+        {
+          "ts": 1745186400,
+          "time": "2025-04-21T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 24.02,
+          "day": "2025-04-21"
+        },
+        {
+          "ts": 1745272800,
+          "time": "2025-04-22T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 24.02,
+          "day": "2025-04-22"
+        },
+        {
+          "ts": 1745359200,
+          "time": "2025-04-23T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 24.02,
+          "day": "2025-04-23"
+        },
+        {
+          "ts": 1745445600,
+          "time": "2025-04-24T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 24.02,
+          "day": "2025-04-24"
+        },
+        {
+          "ts": 1745532000,
+          "time": "2025-04-25T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 24.02,
+          "day": "2025-04-25"
+        },
+        {
+          "ts": 1745618400,
+          "time": "2025-04-26T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 24.02,
+          "day": "2025-04-26"
+        },
+        {
+          "ts": 1745704800,
+          "time": "2025-04-27T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 24.3,
+          "day": "2025-04-27"
+        },
+        {
+          "ts": 1745791200,
+          "time": "2025-04-28T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 24.3,
+          "day": "2025-04-28"
+        },
+        {
+          "ts": 1745877600,
+          "time": "2025-04-29T00:00:00+02:00",
+          "rain_mm": 1.12,
+          "rain_rate_max_mm_h": 3.35,
+          "rain_cumulative_mm": 25.42,
+          "day": "2025-04-29"
+        },
+        {
+          "ts": 1745964000,
+          "time": "2025-04-30T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 25.42,
+          "day": "2025-04-30"
+        },
+        {
+          "ts": 1746050400,
+          "time": "2025-05-01T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 25.42,
+          "day": "2025-05-01"
+        },
+        {
+          "ts": 1746136800,
+          "time": "2025-05-02T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 25.42,
+          "day": "2025-05-02"
+        },
+        {
+          "ts": 1746223200,
+          "time": "2025-05-03T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 25.7,
+          "day": "2025-05-03"
+        },
+        {
+          "ts": 1746309600,
+          "time": "2025-05-04T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 25.7,
+          "day": "2025-05-04"
+        },
+        {
+          "ts": 1746396000,
+          "time": "2025-05-05T00:00:00+02:00",
+          "rain_mm": 4.19,
+          "rain_rate_max_mm_h": 4.47,
+          "rain_cumulative_mm": 29.89,
+          "day": "2025-05-05"
+        },
+        {
+          "ts": 1746482400,
+          "time": "2025-05-06T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.89,
+          "day": "2025-05-06"
+        },
+        {
+          "ts": 1746568800,
+          "time": "2025-05-07T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 29.89,
+          "day": "2025-05-07"
+        },
+        {
+          "ts": 1746655200,
+          "time": "2025-05-08T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 30.17,
+          "day": "2025-05-08"
+        },
+        {
+          "ts": 1746741600,
+          "time": "2025-05-09T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 30.17,
+          "day": "2025-05-09"
+        },
+        {
+          "ts": 1746828000,
+          "time": "2025-05-10T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 30.17,
+          "day": "2025-05-10"
+        },
+        {
+          "ts": 1746914400,
+          "time": "2025-05-11T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 30.17,
+          "day": "2025-05-11"
+        },
+        {
+          "ts": 1747000800,
+          "time": "2025-05-12T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 30.17,
+          "day": "2025-05-12"
+        },
+        {
+          "ts": 1747087200,
+          "time": "2025-05-13T00:00:00+02:00",
+          "rain_mm": 8.66,
+          "rain_rate_max_mm_h": 12.01,
+          "rain_cumulative_mm": 38.83,
+          "day": "2025-05-13"
+        },
+        {
+          "ts": 1747173600,
+          "time": "2025-05-14T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 38.83,
+          "day": "2025-05-14"
+        },
+        {
+          "ts": 1747260000,
+          "time": "2025-05-15T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 38.83,
+          "day": "2025-05-15"
+        },
+        {
+          "ts": 1747346400,
+          "time": "2025-05-16T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 39.11,
+          "day": "2025-05-16"
+        },
+        {
+          "ts": 1747432800,
+          "time": "2025-05-17T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 39.39,
+          "day": "2025-05-17"
+        },
+        {
+          "ts": 1747519200,
+          "time": "2025-05-18T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 39.39,
+          "day": "2025-05-18"
+        },
+        {
+          "ts": 1747605600,
+          "time": "2025-05-19T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 39.39,
+          "day": "2025-05-19"
+        },
+        {
+          "ts": 1747692000,
+          "time": "2025-05-20T00:00:00+02:00",
+          "rain_mm": 4.19,
+          "rain_rate_max_mm_h": 5.59,
+          "rain_cumulative_mm": 43.58,
+          "day": "2025-05-20"
+        },
+        {
+          "ts": 1747778400,
+          "time": "2025-05-21T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 43.58,
+          "day": "2025-05-21"
+        },
+        {
+          "ts": 1747864800,
+          "time": "2025-05-22T00:00:00+02:00",
+          "rain_mm": 10.9,
+          "rain_rate_max_mm_h": 28.33,
+          "rain_cumulative_mm": 54.48,
+          "day": "2025-05-22"
+        },
+        {
+          "ts": 1747951200,
+          "time": "2025-05-23T00:00:00+02:00",
+          "rain_mm": 1.12,
+          "rain_rate_max_mm_h": 2.57,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-05-23"
+        },
+        {
+          "ts": 1748037600,
+          "time": "2025-05-24T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-05-24"
+        },
+        {
+          "ts": 1748124000,
+          "time": "2025-05-25T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-05-25"
+        },
+        {
+          "ts": 1748210400,
+          "time": "2025-05-26T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-05-26"
+        },
+        {
+          "ts": 1748296800,
+          "time": "2025-05-27T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-05-27"
+        },
+        {
+          "ts": 1748383200,
+          "time": "2025-05-28T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-05-28"
+        },
+        {
+          "ts": 1748469600,
+          "time": "2025-05-29T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-05-29"
+        },
+        {
+          "ts": 1748556000,
+          "time": "2025-05-30T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-05-30"
+        },
+        {
+          "ts": 1748642400,
+          "time": "2025-05-31T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-05-31"
+        },
+        {
+          "ts": 1748728800,
+          "time": "2025-06-01T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-06-01"
+        },
+        {
+          "ts": 1748815200,
+          "time": "2025-06-02T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-06-02"
+        },
+        {
+          "ts": 1748901600,
+          "time": "2025-06-03T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.6,
+          "day": "2025-06-03"
+        },
+        {
+          "ts": 1748988000,
+          "time": "2025-06-04T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 55.88,
+          "day": "2025-06-04"
+        },
+        {
+          "ts": 1749074400,
+          "time": "2025-06-05T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.88,
+          "day": "2025-06-05"
+        },
+        {
+          "ts": 1749160800,
+          "time": "2025-06-06T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.88,
+          "day": "2025-06-06"
+        },
+        {
+          "ts": 1749247200,
+          "time": "2025-06-07T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.88,
+          "day": "2025-06-07"
+        },
+        {
+          "ts": 1749333600,
+          "time": "2025-06-08T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.88,
+          "day": "2025-06-08"
+        },
+        {
+          "ts": 1749420000,
+          "time": "2025-06-09T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.88,
+          "day": "2025-06-09"
+        },
+        {
+          "ts": 1749506400,
+          "time": "2025-06-10T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.88,
+          "day": "2025-06-10"
+        },
+        {
+          "ts": 1749592800,
+          "time": "2025-06-11T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 55.88,
+          "day": "2025-06-11"
+        },
+        {
+          "ts": 1749679200,
+          "time": "2025-06-12T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 56.16,
+          "day": "2025-06-12"
+        },
+        {
+          "ts": 1749765600,
+          "time": "2025-06-13T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 56.16,
+          "day": "2025-06-13"
+        },
+        {
+          "ts": 1749852000,
+          "time": "2025-06-14T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 56.16,
+          "day": "2025-06-14"
+        },
+        {
+          "ts": 1749938400,
+          "time": "2025-06-15T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 56.16,
+          "day": "2025-06-15"
+        },
+        {
+          "ts": 1750024800,
+          "time": "2025-06-16T00:00:00+02:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 2.24,
+          "rain_cumulative_mm": 56.72,
+          "day": "2025-06-16"
+        },
+        {
+          "ts": 1750111200,
+          "time": "2025-06-17T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 56.72,
+          "day": "2025-06-17"
+        },
+        {
+          "ts": 1750197600,
+          "time": "2025-06-18T00:00:00+02:00",
+          "rain_mm": 1.96,
+          "rain_rate_max_mm_h": 6.55,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-18"
+        },
+        {
+          "ts": 1750284000,
+          "time": "2025-06-19T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-19"
+        },
+        {
+          "ts": 1750370400,
+          "time": "2025-06-20T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-20"
+        },
+        {
+          "ts": 1750456800,
+          "time": "2025-06-21T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-21"
+        },
+        {
+          "ts": 1750543200,
+          "time": "2025-06-22T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-22"
+        },
+        {
+          "ts": 1750629600,
+          "time": "2025-06-23T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-23"
+        },
+        {
+          "ts": 1750716000,
+          "time": "2025-06-24T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-24"
+        },
+        {
+          "ts": 1750802400,
+          "time": "2025-06-25T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-25"
+        },
+        {
+          "ts": 1750888800,
+          "time": "2025-06-26T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-26"
+        },
+        {
+          "ts": 1750975200,
+          "time": "2025-06-27T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-27"
+        },
+        {
+          "ts": 1751061600,
+          "time": "2025-06-28T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.68,
+          "day": "2025-06-28"
+        },
+        {
+          "ts": 1751148000,
+          "time": "2025-06-29T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 58.96,
+          "day": "2025-06-29"
+        },
+        {
+          "ts": 1751234400,
+          "time": "2025-06-30T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.96,
+          "day": "2025-06-30"
+        },
+        {
+          "ts": 1751320800,
+          "time": "2025-07-01T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.96,
+          "day": "2025-07-01"
+        },
+        {
+          "ts": 1751407200,
+          "time": "2025-07-02T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 58.96,
+          "day": "2025-07-02"
+        },
+        {
+          "ts": 1751493600,
+          "time": "2025-07-03T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 59.24,
+          "day": "2025-07-03"
+        },
+        {
+          "ts": 1751580000,
+          "time": "2025-07-04T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 59.24,
+          "day": "2025-07-04"
+        },
+        {
+          "ts": 1751666400,
+          "time": "2025-07-05T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 59.24,
+          "day": "2025-07-05"
+        },
+        {
+          "ts": 1751752800,
+          "time": "2025-07-06T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 59.24,
+          "day": "2025-07-06"
+        },
+        {
+          "ts": 1751839200,
+          "time": "2025-07-07T00:00:00+02:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 2.24,
+          "rain_cumulative_mm": 59.8,
+          "day": "2025-07-07"
+        },
+        {
+          "ts": 1751925600,
+          "time": "2025-07-08T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 59.8,
+          "day": "2025-07-08"
+        },
+        {
+          "ts": 1752012000,
+          "time": "2025-07-09T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 60.08,
+          "day": "2025-07-09"
+        },
+        {
+          "ts": 1752098400,
+          "time": "2025-07-10T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 60.08,
+          "day": "2025-07-10"
+        },
+        {
+          "ts": 1752184800,
+          "time": "2025-07-11T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 60.36,
+          "day": "2025-07-11"
+        },
+        {
+          "ts": 1752271200,
+          "time": "2025-07-12T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 60.36,
+          "day": "2025-07-12"
+        },
+        {
+          "ts": 1752357600,
+          "time": "2025-07-13T00:00:00+02:00",
+          "rain_mm": 12.29,
+          "rain_rate_max_mm_h": 13.66,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-13"
+        },
+        {
+          "ts": 1752444000,
+          "time": "2025-07-14T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-14"
+        },
+        {
+          "ts": 1752530400,
+          "time": "2025-07-15T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-15"
+        },
+        {
+          "ts": 1752616800,
+          "time": "2025-07-16T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-16"
+        },
+        {
+          "ts": 1752703200,
+          "time": "2025-07-17T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-17"
+        },
+        {
+          "ts": 1752789600,
+          "time": "2025-07-18T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-18"
+        },
+        {
+          "ts": 1752876000,
+          "time": "2025-07-19T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-19"
+        },
+        {
+          "ts": 1752962400,
+          "time": "2025-07-20T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-20"
+        },
+        {
+          "ts": 1753048800,
+          "time": "2025-07-21T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-21"
+        },
+        {
+          "ts": 1753135200,
+          "time": "2025-07-22T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.65,
+          "day": "2025-07-22"
+        },
+        {
+          "ts": 1753221600,
+          "time": "2025-07-23T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 72.93,
+          "day": "2025-07-23"
+        },
+        {
+          "ts": 1753308000,
+          "time": "2025-07-24T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.93,
+          "day": "2025-07-24"
+        },
+        {
+          "ts": 1753394400,
+          "time": "2025-07-25T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 72.93,
+          "day": "2025-07-25"
+        },
+        {
+          "ts": 1753480800,
+          "time": "2025-07-26T00:00:00+02:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 73.49,
+          "day": "2025-07-26"
+        },
+        {
+          "ts": 1753567200,
+          "time": "2025-07-27T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 73.49,
+          "day": "2025-07-27"
+        },
+        {
+          "ts": 1753653600,
+          "time": "2025-07-28T00:00:00+02:00",
+          "rain_mm": 3.07,
+          "rain_rate_max_mm_h": 7.82,
+          "rain_cumulative_mm": 76.56,
+          "day": "2025-07-28"
+        },
+        {
+          "ts": 1753740000,
+          "time": "2025-07-29T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.56,
+          "day": "2025-07-29"
+        },
+        {
+          "ts": 1753826400,
+          "time": "2025-07-30T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-07-30"
+        },
+        {
+          "ts": 1753912800,
+          "time": "2025-07-31T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-07-31"
+        },
+        {
+          "ts": 1753999200,
+          "time": "2025-08-01T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-01"
+        },
+        {
+          "ts": 1754085600,
+          "time": "2025-08-02T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-02"
+        },
+        {
+          "ts": 1754172000,
+          "time": "2025-08-03T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-03"
+        },
+        {
+          "ts": 1754258400,
+          "time": "2025-08-04T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-04"
+        },
+        {
+          "ts": 1754344800,
+          "time": "2025-08-05T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-05"
+        },
+        {
+          "ts": 1754431200,
+          "time": "2025-08-06T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-06"
+        },
+        {
+          "ts": 1754517600,
+          "time": "2025-08-07T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-07"
+        },
+        {
+          "ts": 1754604000,
+          "time": "2025-08-08T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-08"
+        },
+        {
+          "ts": 1754690400,
+          "time": "2025-08-09T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-09"
+        },
+        {
+          "ts": 1754776800,
+          "time": "2025-08-10T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-10"
+        },
+        {
+          "ts": 1754863200,
+          "time": "2025-08-11T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 76.84,
+          "day": "2025-08-11"
+        },
+        {
+          "ts": 1754949600,
+          "time": "2025-08-12T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 77.12,
+          "day": "2025-08-12"
+        },
+        {
+          "ts": 1755036000,
+          "time": "2025-08-13T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 77.12,
+          "day": "2025-08-13"
+        },
+        {
+          "ts": 1755122400,
+          "time": "2025-08-14T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 77.12,
+          "day": "2025-08-14"
+        },
+        {
+          "ts": 1755208800,
+          "time": "2025-08-15T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 77.12,
+          "day": "2025-08-15"
+        },
+        {
+          "ts": 1755295200,
+          "time": "2025-08-16T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 77.12,
+          "day": "2025-08-16"
+        },
+        {
+          "ts": 1755381600,
+          "time": "2025-08-17T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 77.12,
+          "day": "2025-08-17"
+        },
+        {
+          "ts": 1755468000,
+          "time": "2025-08-18T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 77.12,
+          "day": "2025-08-18"
+        },
+        {
+          "ts": 1755554400,
+          "time": "2025-08-19T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 77.12,
+          "day": "2025-08-19"
+        },
+        {
+          "ts": 1755640800,
+          "time": "2025-08-20T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 77.12,
+          "day": "2025-08-20"
+        },
+        {
+          "ts": 1755727200,
+          "time": "2025-08-21T00:00:00+02:00",
+          "rain_mm": 31.29,
+          "rain_rate_max_mm_h": 76.91,
+          "rain_cumulative_mm": 108.41,
+          "day": "2025-08-21"
+        },
+        {
+          "ts": 1755813600,
+          "time": "2025-08-22T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 108.41,
+          "day": "2025-08-22"
+        },
+        {
+          "ts": 1755900000,
+          "time": "2025-08-23T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 108.41,
+          "day": "2025-08-23"
+        },
+        {
+          "ts": 1755986400,
+          "time": "2025-08-24T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 108.41,
+          "day": "2025-08-24"
+        },
+        {
+          "ts": 1756072800,
+          "time": "2025-08-25T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 108.41,
+          "day": "2025-08-25"
+        },
+        {
+          "ts": 1756159200,
+          "time": "2025-08-26T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 108.41,
+          "day": "2025-08-26"
+        },
+        {
+          "ts": 1756245600,
+          "time": "2025-08-27T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 108.41,
+          "day": "2025-08-27"
+        },
+        {
+          "ts": 1756332000,
+          "time": "2025-08-28T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 108.41,
+          "day": "2025-08-28"
+        },
+        {
+          "ts": 1756418400,
+          "time": "2025-08-29T00:00:00+02:00",
+          "rain_mm": 7.82,
+          "rain_rate_max_mm_h": 26.31,
+          "rain_cumulative_mm": 116.23,
+          "day": "2025-08-29"
+        },
+        {
+          "ts": 1756504800,
+          "time": "2025-08-30T00:00:00+02:00",
+          "rain_mm": 1.12,
+          "rain_rate_max_mm_h": 4.47,
+          "rain_cumulative_mm": 117.35,
+          "day": "2025-08-30"
+        },
+        {
+          "ts": 1756591200,
+          "time": "2025-08-31T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 117.63,
+          "day": "2025-08-31"
+        },
+        {
+          "ts": 1756677600,
+          "time": "2025-09-01T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 117.63,
+          "day": "2025-09-01"
+        },
+        {
+          "ts": 1756764000,
+          "time": "2025-09-02T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 117.63,
+          "day": "2025-09-02"
+        },
+        {
+          "ts": 1756850400,
+          "time": "2025-09-03T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 117.91,
+          "day": "2025-09-03"
+        },
+        {
+          "ts": 1756936800,
+          "time": "2025-09-04T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 118.19,
+          "day": "2025-09-04"
+        },
+        {
+          "ts": 1757023200,
+          "time": "2025-09-05T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 118.19,
+          "day": "2025-09-05"
+        },
+        {
+          "ts": 1757109600,
+          "time": "2025-09-06T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 118.19,
+          "day": "2025-09-06"
+        },
+        {
+          "ts": 1757196000,
+          "time": "2025-09-07T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 118.19,
+          "day": "2025-09-07"
+        },
+        {
+          "ts": 1757307900,
+          "time": "2025-09-08T07:05:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 118.19,
+          "day": "2025-09-08"
+        },
+        {
+          "ts": 1757368800,
+          "time": "2025-09-09T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 118.19,
+          "day": "2025-09-09"
+        },
+        {
+          "ts": 1757455200,
+          "time": "2025-09-10T00:00:00+02:00",
+          "rain_mm": 43.03,
+          "rain_rate_max_mm_h": 47.86,
+          "rain_cumulative_mm": 161.22,
+          "day": "2025-09-10"
+        },
+        {
+          "ts": 1757541600,
+          "time": "2025-09-11T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.22,
+          "day": "2025-09-11"
+        },
+        {
+          "ts": 1757628000,
+          "time": "2025-09-12T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.22,
+          "day": "2025-09-12"
+        },
+        {
+          "ts": 1757714400,
+          "time": "2025-09-13T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.22,
+          "day": "2025-09-13"
+        },
+        {
+          "ts": 1757800800,
+          "time": "2025-09-14T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.22,
+          "day": "2025-09-14"
+        },
+        {
+          "ts": 1757887200,
+          "time": "2025-09-15T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 161.5,
+          "day": "2025-09-15"
+        },
+        {
+          "ts": 1757973600,
+          "time": "2025-09-16T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.5,
+          "day": "2025-09-16"
+        },
+        {
+          "ts": 1758060000,
+          "time": "2025-09-17T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.5,
+          "day": "2025-09-17"
+        },
+        {
+          "ts": 1758146400,
+          "time": "2025-09-18T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.5,
+          "day": "2025-09-18"
+        },
+        {
+          "ts": 1758232800,
+          "time": "2025-09-19T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.5,
+          "day": "2025-09-19"
+        },
+        {
+          "ts": 1758319200,
+          "time": "2025-09-20T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.5,
+          "day": "2025-09-20"
+        },
+        {
+          "ts": 1758405600,
+          "time": "2025-09-21T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 161.5,
+          "day": "2025-09-21"
+        },
+        {
+          "ts": 1758492000,
+          "time": "2025-09-22T00:00:00+02:00",
+          "rain_mm": 4.19,
+          "rain_rate_max_mm_h": 2.24,
+          "rain_cumulative_mm": 165.69,
+          "day": "2025-09-22"
+        },
+        {
+          "ts": 1758578400,
+          "time": "2025-09-23T00:00:00+02:00",
+          "rain_mm": 5.31,
+          "rain_rate_max_mm_h": 5.79,
+          "rain_cumulative_mm": 171.0,
+          "day": "2025-09-23"
+        },
+        {
+          "ts": 1758664800,
+          "time": "2025-09-24T00:00:00+02:00",
+          "rain_mm": 1.96,
+          "rain_rate_max_mm_h": 2.24,
+          "rain_cumulative_mm": 172.96,
+          "day": "2025-09-24"
+        },
+        {
+          "ts": 1758751200,
+          "time": "2025-09-25T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 173.24,
+          "day": "2025-09-25"
+        },
+        {
+          "ts": 1758837600,
+          "time": "2025-09-26T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 173.24,
+          "day": "2025-09-26"
+        },
+        {
+          "ts": 1758924000,
+          "time": "2025-09-27T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 173.24,
+          "day": "2025-09-27"
+        },
+        {
+          "ts": 1759010400,
+          "time": "2025-09-28T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 173.24,
+          "day": "2025-09-28"
+        },
+        {
+          "ts": 1759096800,
+          "time": "2025-09-29T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 173.24,
+          "day": "2025-09-29"
+        },
+        {
+          "ts": 1759183200,
+          "time": "2025-09-30T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 173.24,
+          "day": "2025-09-30"
+        },
+        {
+          "ts": 1759269600,
+          "time": "2025-10-01T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 173.24,
+          "day": "2025-10-01"
+        },
+        {
+          "ts": 1759356000,
+          "time": "2025-10-02T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 173.24,
+          "day": "2025-10-02"
+        },
+        {
+          "ts": 1759442400,
+          "time": "2025-10-03T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 173.52,
+          "day": "2025-10-03"
+        },
+        {
+          "ts": 1759528800,
+          "time": "2025-10-04T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 173.52,
+          "day": "2025-10-04"
+        },
+        {
+          "ts": 1759615200,
+          "time": "2025-10-05T00:00:00+02:00",
+          "rain_mm": 3.07,
+          "rain_rate_max_mm_h": 7.04,
+          "rain_cumulative_mm": 176.59,
+          "day": "2025-10-05"
+        },
+        {
+          "ts": 1759701600,
+          "time": "2025-10-06T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 176.87,
+          "day": "2025-10-06"
+        },
+        {
+          "ts": 1759788000,
+          "time": "2025-10-07T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 176.87,
+          "day": "2025-10-07"
+        },
+        {
+          "ts": 1759874400,
+          "time": "2025-10-08T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 176.87,
+          "day": "2025-10-08"
+        },
+        {
+          "ts": 1759960800,
+          "time": "2025-10-09T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 176.87,
+          "day": "2025-10-09"
+        },
+        {
+          "ts": 1760047200,
+          "time": "2025-10-10T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 176.87,
+          "day": "2025-10-10"
+        },
+        {
+          "ts": 1760133600,
+          "time": "2025-10-11T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 176.87,
+          "day": "2025-10-11"
+        },
+        {
+          "ts": 1760220000,
+          "time": "2025-10-12T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 176.87,
+          "day": "2025-10-12"
+        },
+        {
+          "ts": 1760306400,
+          "time": "2025-10-13T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 176.87,
+          "day": "2025-10-13"
+        },
+        {
+          "ts": 1760392800,
+          "time": "2025-10-14T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 176.87,
+          "day": "2025-10-14"
+        },
+        {
+          "ts": 1760479200,
+          "time": "2025-10-15T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 177.15,
+          "day": "2025-10-15"
+        },
+        {
+          "ts": 1760565600,
+          "time": "2025-10-16T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 177.15,
+          "day": "2025-10-16"
+        },
+        {
+          "ts": 1760652000,
+          "time": "2025-10-17T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 177.43,
+          "day": "2025-10-17"
+        },
+        {
+          "ts": 1760738400,
+          "time": "2025-10-18T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 177.43,
+          "day": "2025-10-18"
+        },
+        {
+          "ts": 1760824800,
+          "time": "2025-10-19T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 177.43,
+          "day": "2025-10-19"
+        },
+        {
+          "ts": 1760911200,
+          "time": "2025-10-20T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 177.43,
+          "day": "2025-10-20"
+        },
+        {
+          "ts": 1760997600,
+          "time": "2025-10-21T00:00:00+02:00",
+          "rain_mm": 1.12,
+          "rain_rate_max_mm_h": 3.11,
+          "rain_cumulative_mm": 178.55,
+          "day": "2025-10-21"
+        },
+        {
+          "ts": 1761084000,
+          "time": "2025-10-22T00:00:00+02:00",
+          "rain_mm": 0.84,
+          "rain_rate_max_mm_h": 2.24,
+          "rain_cumulative_mm": 179.39,
+          "day": "2025-10-22"
+        },
+        {
+          "ts": 1761170400,
+          "time": "2025-10-23T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 179.39,
+          "day": "2025-10-23"
+        },
+        {
+          "ts": 1761256800,
+          "time": "2025-10-24T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 179.39,
+          "day": "2025-10-24"
+        },
+        {
+          "ts": 1761343200,
+          "time": "2025-10-25T00:00:00+02:00",
+          "rain_mm": 1.68,
+          "rain_rate_max_mm_h": 3.31,
+          "rain_cumulative_mm": 181.07,
+          "day": "2025-10-25"
+        },
+        {
+          "ts": 1761429600,
+          "time": "2025-10-26T00:00:00+02:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 181.35,
+          "day": "2025-10-26"
+        },
+        {
+          "ts": 1761519600,
+          "time": "2025-10-27T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 181.35,
+          "day": "2025-10-27"
+        },
+        {
+          "ts": 1761606000,
+          "time": "2025-10-28T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 181.35,
+          "day": "2025-10-28"
+        },
+        {
+          "ts": 1761692400,
+          "time": "2025-10-29T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 181.35,
+          "day": "2025-10-29"
+        },
+        {
+          "ts": 1761778800,
+          "time": "2025-10-30T00:00:00+01:00",
+          "rain_mm": 5.03,
+          "rain_rate_max_mm_h": 4.02,
+          "rain_cumulative_mm": 186.38,
+          "day": "2025-10-30"
+        },
+        {
+          "ts": 1761865200,
+          "time": "2025-10-31T00:00:00+01:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 186.94,
+          "day": "2025-10-31"
+        },
+        {
+          "ts": 1761951600,
+          "time": "2025-11-01T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 186.94,
+          "day": "2025-11-01"
+        },
+        {
+          "ts": 1762038000,
+          "time": "2025-11-02T00:00:00+01:00",
+          "rain_mm": 1.68,
+          "rain_rate_max_mm_h": 5.57,
+          "rain_cumulative_mm": 188.62,
+          "day": "2025-11-02"
+        },
+        {
+          "ts": 1762124400,
+          "time": "2025-11-03T00:00:00+01:00",
+          "rain_mm": 2.79,
+          "rain_rate_max_mm_h": 9.86,
+          "rain_cumulative_mm": 191.41,
+          "day": "2025-11-03"
+        },
+        {
+          "ts": 1762210800,
+          "time": "2025-11-04T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 191.69,
+          "day": "2025-11-04"
+        },
+        {
+          "ts": 1762297200,
+          "time": "2025-11-05T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 191.69,
+          "day": "2025-11-05"
+        },
+        {
+          "ts": 1762383600,
+          "time": "2025-11-06T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 191.69,
+          "day": "2025-11-06"
+        },
+        {
+          "ts": 1762470000,
+          "time": "2025-11-07T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 191.69,
+          "day": "2025-11-07"
+        },
+        {
+          "ts": 1762556400,
+          "time": "2025-11-08T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 191.69,
+          "day": "2025-11-08"
+        },
+        {
+          "ts": 1762642800,
+          "time": "2025-11-09T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 191.97,
+          "day": "2025-11-09"
+        },
+        {
+          "ts": 1762729200,
+          "time": "2025-11-10T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 192.25,
+          "day": "2025-11-10"
+        },
+        {
+          "ts": 1762815600,
+          "time": "2025-11-11T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 192.25,
+          "day": "2025-11-11"
+        },
+        {
+          "ts": 1762902000,
+          "time": "2025-11-12T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 192.25,
+          "day": "2025-11-12"
+        },
+        {
+          "ts": 1762988400,
+          "time": "2025-11-13T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 192.25,
+          "day": "2025-11-13"
+        },
+        {
+          "ts": 1763074800,
+          "time": "2025-11-14T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 192.25,
+          "day": "2025-11-14"
+        },
+        {
+          "ts": 1763161200,
+          "time": "2025-11-15T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 192.25,
+          "day": "2025-11-15"
+        },
+        {
+          "ts": 1763247600,
+          "time": "2025-11-16T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 192.25,
+          "day": "2025-11-16"
+        },
+        {
+          "ts": 1763334000,
+          "time": "2025-11-17T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 192.25,
+          "day": "2025-11-17"
+        },
+        {
+          "ts": 1763420400,
+          "time": "2025-11-18T00:00:00+01:00",
+          "rain_mm": 1.96,
+          "rain_rate_max_mm_h": 3.35,
+          "rain_cumulative_mm": 194.21,
+          "day": "2025-11-18"
+        },
+        {
+          "ts": 1763506800,
+          "time": "2025-11-19T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 194.49,
+          "day": "2025-11-19"
+        },
+        {
+          "ts": 1763593200,
+          "time": "2025-11-20T00:00:00+01:00",
+          "rain_mm": 0.84,
+          "rain_rate_max_mm_h": 1.65,
+          "rain_cumulative_mm": 195.33,
+          "day": "2025-11-20"
+        },
+        {
+          "ts": 1763679600,
+          "time": "2025-11-21T00:00:00+01:00",
+          "rain_mm": 10.34,
+          "rain_rate_max_mm_h": 16.25,
+          "rain_cumulative_mm": 205.67,
+          "day": "2025-11-21"
+        },
+        {
+          "ts": 1763766000,
+          "time": "2025-11-22T00:00:00+01:00",
+          "rain_mm": 3.07,
+          "rain_rate_max_mm_h": 4.49,
+          "rain_cumulative_mm": 208.74,
+          "day": "2025-11-22"
+        },
+        {
+          "ts": 1763852400,
+          "time": "2025-11-23T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 209.02,
+          "day": "2025-11-23"
+        },
+        {
+          "ts": 1763938800,
+          "time": "2025-11-24T00:00:00+01:00",
+          "rain_mm": 17.04,
+          "rain_rate_max_mm_h": 16.72,
+          "rain_cumulative_mm": 226.06,
+          "day": "2025-11-24"
+        },
+        {
+          "ts": 1764025200,
+          "time": "2025-11-25T00:00:00+01:00",
+          "rain_mm": 8.94,
+          "rain_rate_max_mm_h": 19.16,
+          "rain_cumulative_mm": 235.0,
+          "day": "2025-11-25"
+        },
+        {
+          "ts": 1764111600,
+          "time": "2025-11-26T00:00:00+01:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 235.56,
+          "day": "2025-11-26"
+        },
+        {
+          "ts": 1764198000,
+          "time": "2025-11-27T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 235.56,
+          "day": "2025-11-27"
+        },
+        {
+          "ts": 1764284400,
+          "time": "2025-11-28T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 235.56,
+          "day": "2025-11-28"
+        },
+        {
+          "ts": 1764370800,
+          "time": "2025-11-29T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 235.56,
+          "day": "2025-11-29"
+        },
+        {
+          "ts": 1764457200,
+          "time": "2025-11-30T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 235.56,
+          "day": "2025-11-30"
+        },
+        {
+          "ts": 1764543600,
+          "time": "2025-12-01T00:00:00+01:00",
+          "rain_mm": 1.12,
+          "rain_rate_max_mm_h": 1.32,
+          "rain_cumulative_mm": 236.68,
+          "day": "2025-12-01"
+        },
+        {
+          "ts": 1764630000,
+          "time": "2025-12-02T00:00:00+01:00",
+          "rain_mm": 17.88,
+          "rain_rate_max_mm_h": 6.17,
+          "rain_cumulative_mm": 254.56,
+          "day": "2025-12-02"
+        },
+        {
+          "ts": 1764716400,
+          "time": "2025-12-03T00:00:00+01:00",
+          "rain_mm": 1.12,
+          "rain_rate_max_mm_h": 2.24,
+          "rain_cumulative_mm": 255.68,
+          "day": "2025-12-03"
+        },
+        {
+          "ts": 1764802800,
+          "time": "2025-12-04T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.68,
+          "day": "2025-12-04"
+        },
+        {
+          "ts": 1764889200,
+          "time": "2025-12-05T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-05"
+        },
+        {
+          "ts": 1764975600,
+          "time": "2025-12-06T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-06"
+        },
+        {
+          "ts": 1765062000,
+          "time": "2025-12-07T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-07"
+        },
+        {
+          "ts": 1765148400,
+          "time": "2025-12-08T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-08"
+        },
+        {
+          "ts": 1765234800,
+          "time": "2025-12-09T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-09"
+        },
+        {
+          "ts": 1765321200,
+          "time": "2025-12-10T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-10"
+        },
+        {
+          "ts": 1765407600,
+          "time": "2025-12-11T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-11"
+        },
+        {
+          "ts": 1765494000,
+          "time": "2025-12-12T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-12"
+        },
+        {
+          "ts": 1765580400,
+          "time": "2025-12-13T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-13"
+        },
+        {
+          "ts": 1765666800,
+          "time": "2025-12-14T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-14"
+        },
+        {
+          "ts": 1765753200,
+          "time": "2025-12-15T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 255.96,
+          "day": "2025-12-15"
+        },
+        {
+          "ts": 1765839600,
+          "time": "2025-12-16T00:00:00+01:00",
+          "rain_mm": 14.25,
+          "rain_rate_max_mm_h": 4.98,
+          "rain_cumulative_mm": 270.21,
+          "day": "2025-12-16"
+        },
+        {
+          "ts": 1765926000,
+          "time": "2025-12-17T00:00:00+01:00",
+          "rain_mm": 1.4,
+          "rain_rate_max_mm_h": 1.94,
+          "rain_cumulative_mm": 271.61,
+          "day": "2025-12-17"
+        },
+        {
+          "ts": 1766012400,
+          "time": "2025-12-18T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 271.89,
+          "day": "2025-12-18"
+        },
+        {
+          "ts": 1766098800,
+          "time": "2025-12-19T00:00:00+01:00",
+          "rain_mm": 3.07,
+          "rain_rate_max_mm_h": 4.13,
+          "rain_cumulative_mm": 274.96,
+          "day": "2025-12-19"
+        },
+        {
+          "ts": 1766185200,
+          "time": "2025-12-20T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 274.96,
+          "day": "2025-12-20"
+        },
+        {
+          "ts": 1766271600,
+          "time": "2025-12-21T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 274.96,
+          "day": "2025-12-21"
+        },
+        {
+          "ts": 1766358000,
+          "time": "2025-12-22T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 274.96,
+          "day": "2025-12-22"
+        },
+        {
+          "ts": 1766444400,
+          "time": "2025-12-23T00:00:00+01:00",
+          "rain_mm": 16.48,
+          "rain_rate_max_mm_h": 6.64,
+          "rain_cumulative_mm": 291.44,
+          "day": "2025-12-23"
+        },
+        {
+          "ts": 1766530800,
+          "time": "2025-12-24T00:00:00+01:00",
+          "rain_mm": 21.23,
+          "rain_rate_max_mm_h": 7.18,
+          "rain_cumulative_mm": 312.67,
+          "day": "2025-12-24"
+        },
+        {
+          "ts": 1766617200,
+          "time": "2025-12-25T00:00:00+01:00",
+          "rain_mm": 11.73,
+          "rain_rate_max_mm_h": 4.36,
+          "rain_cumulative_mm": 324.4,
+          "day": "2025-12-25"
+        },
+        {
+          "ts": 1766703600,
+          "time": "2025-12-26T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 324.4,
+          "day": "2025-12-26"
+        },
+        {
+          "ts": 1766790000,
+          "time": "2025-12-27T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 324.4,
+          "day": "2025-12-27"
+        },
+        {
+          "ts": 1766876400,
+          "time": "2025-12-28T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 324.4,
+          "day": "2025-12-28"
+        },
+        {
+          "ts": 1766962800,
+          "time": "2025-12-29T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 324.4,
+          "day": "2025-12-29"
+        },
+        {
+          "ts": 1767049200,
+          "time": "2025-12-30T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 324.4,
+          "day": "2025-12-30"
+        },
+        {
+          "ts": 1767135600,
+          "time": "2025-12-31T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 324.4,
+          "day": "2025-12-31"
+        },
+        {
+          "ts": 1767222000,
+          "time": "2026-01-01T00:00:00+01:00",
+          "rain_mm": 1.96,
+          "rain_rate_max_mm_h": 2.74,
+          "rain_cumulative_mm": 326.36,
+          "day": "2026-01-01"
+        },
+        {
+          "ts": 1767308400,
+          "time": "2026-01-02T00:00:00+01:00",
+          "rain_mm": 8.38,
+          "rain_rate_max_mm_h": 6.05,
+          "rain_cumulative_mm": 334.74,
+          "day": "2026-01-02"
+        },
+        {
+          "ts": 1767394800,
+          "time": "2026-01-03T00:00:00+01:00",
+          "rain_mm": 6.43,
+          "rain_rate_max_mm_h": 7.82,
+          "rain_cumulative_mm": 341.17,
+          "day": "2026-01-03"
+        },
+        {
+          "ts": 1767481200,
+          "time": "2026-01-04T00:00:00+01:00",
+          "rain_mm": 8.94,
+          "rain_rate_max_mm_h": 14.07,
+          "rain_cumulative_mm": 350.11,
+          "day": "2026-01-04"
+        },
+        {
+          "ts": 1767589200,
+          "time": "2026-01-05T06:00:00+01:00",
+          "rain_mm": 16.76,
+          "rain_rate_max_mm_h": 12.45,
+          "rain_cumulative_mm": 366.87,
+          "day": "2026-01-05"
+        },
+        {
+          "ts": 1767654000,
+          "time": "2026-01-06T00:00:00+01:00",
+          "rain_mm": 12.85,
+          "rain_rate_max_mm_h": 4.78,
+          "rain_cumulative_mm": 379.72,
+          "day": "2026-01-06"
+        },
+        {
+          "ts": 1767740400,
+          "time": "2026-01-07T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 380.0,
+          "day": "2026-01-07"
+        },
+        {
+          "ts": 1767826800,
+          "time": "2026-01-08T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 380.0,
+          "day": "2026-01-08"
+        },
+        {
+          "ts": 1767913200,
+          "time": "2026-01-09T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 380.28,
+          "day": "2026-01-09"
+        },
+        {
+          "ts": 1767999600,
+          "time": "2026-01-10T00:00:00+01:00",
+          "rain_mm": 4.75,
+          "rain_rate_max_mm_h": 5.57,
+          "rain_cumulative_mm": 385.03,
+          "day": "2026-01-10"
+        },
+        {
+          "ts": 1768086000,
+          "time": "2026-01-11T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 385.03,
+          "day": "2026-01-11"
+        },
+        {
+          "ts": 1768172400,
+          "time": "2026-01-12T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 385.03,
+          "day": "2026-01-12"
+        },
+        {
+          "ts": 1768258800,
+          "time": "2026-01-13T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 385.03,
+          "day": "2026-01-13"
+        },
+        {
+          "ts": 1768345200,
+          "time": "2026-01-14T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 385.03,
+          "day": "2026-01-14"
+        },
+        {
+          "ts": 1768431600,
+          "time": "2026-01-15T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 385.03,
+          "day": "2026-01-15"
+        },
+        {
+          "ts": 1768518000,
+          "time": "2026-01-16T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 385.03,
+          "day": "2026-01-16"
+        },
+        {
+          "ts": 1768604400,
+          "time": "2026-01-17T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 385.03,
+          "day": "2026-01-17"
+        },
+        {
+          "ts": 1768690800,
+          "time": "2026-01-18T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 385.31,
+          "day": "2026-01-18"
+        },
+        {
+          "ts": 1768777200,
+          "time": "2026-01-19T00:00:00+01:00",
+          "rain_mm": 3.91,
+          "rain_rate_max_mm_h": 2.02,
+          "rain_cumulative_mm": 389.22,
+          "day": "2026-01-19"
+        },
+        {
+          "ts": 1768863600,
+          "time": "2026-01-20T00:00:00+01:00",
+          "rain_mm": 1.12,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 390.34,
+          "day": "2026-01-20"
+        },
+        {
+          "ts": 1768950000,
+          "time": "2026-01-21T00:00:00+01:00",
+          "rain_mm": 1.4,
+          "rain_rate_max_mm_h": 4.47,
+          "rain_cumulative_mm": 391.74,
+          "day": "2026-01-21"
+        },
+        {
+          "ts": 1769036400,
+          "time": "2026-01-22T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 392.02,
+          "day": "2026-01-22"
+        },
+        {
+          "ts": 1769122800,
+          "time": "2026-01-23T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 392.02,
+          "day": "2026-01-23"
+        },
+        {
+          "ts": 1769209200,
+          "time": "2026-01-24T00:00:00+01:00",
+          "rain_mm": 8.66,
+          "rain_rate_max_mm_h": 4.47,
+          "rain_cumulative_mm": 400.68,
+          "day": "2026-01-24"
+        },
+        {
+          "ts": 1769295600,
+          "time": "2026-01-25T00:00:00+01:00",
+          "rain_mm": 20.68,
+          "rain_rate_max_mm_h": 9.91,
+          "rain_cumulative_mm": 421.36,
+          "day": "2026-01-25"
+        },
+        {
+          "ts": 1769382000,
+          "time": "2026-01-26T00:00:00+01:00",
+          "rain_mm": 5.31,
+          "rain_rate_max_mm_h": 5.24,
+          "rain_cumulative_mm": 426.67,
+          "day": "2026-01-26"
+        },
+        {
+          "ts": 1769468400,
+          "time": "2026-01-27T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 426.67,
+          "day": "2026-01-27"
+        },
+        {
+          "ts": 1769554800,
+          "time": "2026-01-28T00:00:00+01:00",
+          "rain_mm": 22.07,
+          "rain_rate_max_mm_h": 12.16,
+          "rain_cumulative_mm": 448.74,
+          "day": "2026-01-28"
+        },
+        {
+          "ts": 1769641200,
+          "time": "2026-01-29T00:00:00+01:00",
+          "rain_mm": 2.51,
+          "rain_rate_max_mm_h": 4.03,
+          "rain_cumulative_mm": 451.25,
+          "day": "2026-01-29"
+        },
+        {
+          "ts": 1769727600,
+          "time": "2026-01-30T00:00:00+01:00",
+          "rain_mm": 3.91,
+          "rain_rate_max_mm_h": 8.29,
+          "rain_cumulative_mm": 455.16,
+          "day": "2026-01-30"
+        },
+        {
+          "ts": 1769814000,
+          "time": "2026-01-31T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 455.16,
+          "day": "2026-01-31"
+        },
+        {
+          "ts": 1769900400,
+          "time": "2026-02-01T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 455.16,
+          "day": "2026-02-01"
+        },
+        {
+          "ts": 1769986800,
+          "time": "2026-02-02T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 455.16,
+          "day": "2026-02-02"
+        },
+        {
+          "ts": 1770073200,
+          "time": "2026-02-03T00:00:00+01:00",
+          "rain_mm": 4.47,
+          "rain_rate_max_mm_h": 4.72,
+          "rain_cumulative_mm": 459.63,
+          "day": "2026-02-03"
+        },
+        {
+          "ts": 1770159600,
+          "time": "2026-02-04T00:00:00+01:00",
+          "rain_mm": 10.06,
+          "rain_rate_max_mm_h": 5.37,
+          "rain_cumulative_mm": 469.69,
+          "day": "2026-02-04"
+        },
+        {
+          "ts": 1770246000,
+          "time": "2026-02-05T00:00:00+01:00",
+          "rain_mm": 1.12,
+          "rain_rate_max_mm_h": 2.24,
+          "rain_cumulative_mm": 470.81,
+          "day": "2026-02-05"
+        },
+        {
+          "ts": 1770332400,
+          "time": "2026-02-06T00:00:00+01:00",
+          "rain_mm": 4.47,
+          "rain_rate_max_mm_h": 4.36,
+          "rain_cumulative_mm": 475.28,
+          "day": "2026-02-06"
+        },
+        {
+          "ts": 1770418800,
+          "time": "2026-02-07T00:00:00+01:00",
+          "rain_mm": 7.82,
+          "rain_rate_max_mm_h": 11.18,
+          "rain_cumulative_mm": 483.1,
+          "day": "2026-02-07"
+        },
+        {
+          "ts": 1770505200,
+          "time": "2026-02-08T00:00:00+01:00",
+          "rain_mm": 4.19,
+          "rain_rate_max_mm_h": 2.54,
+          "rain_cumulative_mm": 487.29,
+          "day": "2026-02-08"
+        },
+        {
+          "ts": 1770591600,
+          "time": "2026-02-09T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 487.29,
+          "day": "2026-02-09"
+        },
+        {
+          "ts": 1770678000,
+          "time": "2026-02-10T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 487.57,
+          "day": "2026-02-10"
+        },
+        {
+          "ts": 1770764400,
+          "time": "2026-02-11T00:00:00+01:00",
+          "rain_mm": 2.24,
+          "rain_rate_max_mm_h": 4.21,
+          "rain_cumulative_mm": 489.81,
+          "day": "2026-02-11"
+        },
+        {
+          "ts": 1770850800,
+          "time": "2026-02-12T00:00:00+01:00",
+          "rain_mm": 25.7,
+          "rain_rate_max_mm_h": 12.56,
+          "rain_cumulative_mm": 515.51,
+          "day": "2026-02-12"
+        },
+        {
+          "ts": 1770937200,
+          "time": "2026-02-13T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 515.51,
+          "day": "2026-02-13"
+        },
+        {
+          "ts": 1771023600,
+          "time": "2026-02-14T00:00:00+01:00",
+          "rain_mm": 9.22,
+          "rain_rate_max_mm_h": 4.89,
+          "rain_cumulative_mm": 524.73,
+          "day": "2026-02-14"
+        },
+        {
+          "ts": 1771110000,
+          "time": "2026-02-15T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 524.73,
+          "day": "2026-02-15"
+        },
+        {
+          "ts": 1771196400,
+          "time": "2026-02-16T00:00:00+01:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 525.29,
+          "day": "2026-02-16"
+        },
+        {
+          "ts": 1771282800,
+          "time": "2026-02-17T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 525.29,
+          "day": "2026-02-17"
+        },
+        {
+          "ts": 1771369200,
+          "time": "2026-02-18T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 525.57,
+          "day": "2026-02-18"
+        },
+        {
+          "ts": 1771455600,
+          "time": "2026-02-19T00:00:00+01:00",
+          "rain_mm": 8.38,
+          "rain_rate_max_mm_h": 8.83,
+          "rain_cumulative_mm": 533.95,
+          "day": "2026-02-19"
+        },
+        {
+          "ts": 1771542000,
+          "time": "2026-02-20T00:00:00+01:00",
+          "rain_mm": 3.35,
+          "rain_rate_max_mm_h": 6.42,
+          "rain_cumulative_mm": 537.3,
+          "day": "2026-02-20"
+        },
+        {
+          "ts": 1771628400,
+          "time": "2026-02-21T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.3,
+          "day": "2026-02-21"
+        },
+        {
+          "ts": 1771714800,
+          "time": "2026-02-22T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.3,
+          "day": "2026-02-22"
+        },
+        {
+          "ts": 1771801200,
+          "time": "2026-02-23T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.3,
+          "day": "2026-02-23"
+        },
+        {
+          "ts": 1771887600,
+          "time": "2026-02-24T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.3,
+          "day": "2026-02-24"
+        },
+        {
+          "ts": 1771974000,
+          "time": "2026-02-25T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.3,
+          "day": "2026-02-25"
+        },
+        {
+          "ts": 1772060400,
+          "time": "2026-02-26T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.3,
+          "day": "2026-02-26"
+        },
+        {
+          "ts": 1772146800,
+          "time": "2026-02-27T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.3,
+          "day": "2026-02-27"
+        },
+        {
+          "ts": 1772233200,
+          "time": "2026-02-28T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.3,
+          "day": "2026-02-28"
+        },
+        {
+          "ts": 1772319600,
+          "time": "2026-03-01T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 537.58,
+          "day": "2026-03-01"
+        },
+        {
+          "ts": 1772406000,
+          "time": "2026-03-02T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.58,
+          "day": "2026-03-02"
+        },
+        {
+          "ts": 1772492400,
+          "time": "2026-03-03T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 537.58,
+          "day": "2026-03-03"
+        },
+        {
+          "ts": 1772578800,
+          "time": "2026-03-04T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 537.86,
+          "day": "2026-03-04"
+        },
+        {
+          "ts": 1772665200,
+          "time": "2026-03-05T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 538.14,
+          "day": "2026-03-05"
+        },
+        {
+          "ts": 1772751600,
+          "time": "2026-03-06T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 538.14,
+          "day": "2026-03-06"
+        },
+        {
+          "ts": 1772838000,
+          "time": "2026-03-07T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 538.14,
+          "day": "2026-03-07"
+        },
+        {
+          "ts": 1772924400,
+          "time": "2026-03-08T00:00:00+01:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 2.02,
+          "rain_cumulative_mm": 538.7,
+          "day": "2026-03-08"
+        },
+        {
+          "ts": 1773010800,
+          "time": "2026-03-09T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 538.7,
+          "day": "2026-03-09"
+        },
+        {
+          "ts": 1773097200,
+          "time": "2026-03-10T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 538.7,
+          "day": "2026-03-10"
+        },
+        {
+          "ts": 1773183600,
+          "time": "2026-03-11T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 538.7,
+          "day": "2026-03-11"
+        },
+        {
+          "ts": 1773270000,
+          "time": "2026-03-12T00:00:00+01:00",
+          "rain_mm": 26.54,
+          "rain_rate_max_mm_h": 13.35,
+          "rain_cumulative_mm": 565.24,
+          "day": "2026-03-12"
+        },
+        {
+          "ts": 1773356400,
+          "time": "2026-03-13T00:00:00+01:00",
+          "rain_mm": 1.96,
+          "rain_rate_max_mm_h": 3.8,
+          "rain_cumulative_mm": 567.2,
+          "day": "2026-03-13"
+        },
+        {
+          "ts": 1773442800,
+          "time": "2026-03-14T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.2,
+          "day": "2026-03-14"
+        },
+        {
+          "ts": 1773529200,
+          "time": "2026-03-15T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.2,
+          "day": "2026-03-15"
+        },
+        {
+          "ts": 1773615600,
+          "time": "2026-03-16T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.2,
+          "day": "2026-03-16"
+        },
+        {
+          "ts": 1773702000,
+          "time": "2026-03-17T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.2,
+          "day": "2026-03-17"
+        },
+        {
+          "ts": 1773788400,
+          "time": "2026-03-18T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.2,
+          "day": "2026-03-18"
+        },
+        {
+          "ts": 1773874800,
+          "time": "2026-03-19T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.2,
+          "day": "2026-03-19"
+        },
+        {
+          "ts": 1773961200,
+          "time": "2026-03-20T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.2,
+          "day": "2026-03-20"
+        },
+        {
+          "ts": 1774047600,
+          "time": "2026-03-21T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.2,
+          "day": "2026-03-21"
+        },
+        {
+          "ts": 1774134000,
+          "time": "2026-03-22T00:00:00+01:00",
+          "rain_mm": 0.56,
+          "rain_rate_max_mm_h": 1.51,
+          "rain_cumulative_mm": 567.76,
+          "day": "2026-03-22"
+        },
+        {
+          "ts": 1774220400,
+          "time": "2026-03-23T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.76,
+          "day": "2026-03-23"
+        },
+        {
+          "ts": 1774306800,
+          "time": "2026-03-24T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 567.76,
+          "day": "2026-03-24"
+        },
+        {
+          "ts": 1774393200,
+          "time": "2026-03-25T00:00:00+01:00",
+          "rain_mm": 0.28,
+          "rain_rate_max_mm_h": 1.12,
+          "rain_cumulative_mm": 568.04,
+          "day": "2026-03-25"
+        },
+        {
+          "ts": 1774479600,
+          "time": "2026-03-26T00:00:00+01:00",
+          "rain_mm": 8.38,
+          "rain_rate_max_mm_h": 9.7,
+          "rain_cumulative_mm": 576.42,
+          "day": "2026-03-26"
+        },
+        {
+          "ts": 1774566000,
+          "time": "2026-03-27T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 576.42,
+          "day": "2026-03-27"
+        },
+        {
+          "ts": 1774652400,
+          "time": "2026-03-28T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 576.42,
+          "day": "2026-03-28"
+        },
+        {
+          "ts": 1774738800,
+          "time": "2026-03-29T00:00:00+01:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 576.42,
+          "day": "2026-03-29"
+        },
+        {
+          "ts": 1774821600,
+          "time": "2026-03-30T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 576.42,
+          "day": "2026-03-30"
+        },
+        {
+          "ts": 1774908000,
+          "time": "2026-03-31T00:00:00+02:00",
+          "rain_mm": 1.96,
+          "rain_rate_max_mm_h": 3.22,
+          "rain_cumulative_mm": 578.38,
+          "day": "2026-03-31"
+        },
+        {
+          "ts": 1775298600,
+          "time": "2026-04-04T12:30:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 578.38,
+          "day": "2026-04-04"
+        },
+        {
+          "ts": 1775340000,
+          "time": "2026-04-05T00:00:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 578.38,
+          "day": "2026-04-05"
+        }
+      ]
+    },
+    "5y": {
+      "points": [
+        {
+          "ts": 1733487000,
+          "time": "2024-12-06T13:10:00+01:00",
+          "rain_mm": 7.82,
+          "rain_rate_max_mm_h": 16.76,
+          "rain_cumulative_mm": 7.82,
+          "day": "2024-12"
+        },
+        {
+          "ts": 1735686000,
+          "time": "2025-01-01T00:00:00+01:00",
+          "rain_mm": 36.04,
+          "rain_rate_max_mm_h": 11.61,
+          "rain_cumulative_mm": 43.86,
+          "day": "2025-01"
+        },
+        {
+          "ts": 1738364400,
+          "time": "2025-02-01T00:00:00+01:00",
+          "rain_mm": 60.63,
+          "rain_rate_max_mm_h": 15.6,
+          "rain_cumulative_mm": 104.49,
+          "day": "2025-02"
+        },
+        {
+          "ts": 1740783600,
+          "time": "2025-03-01T00:00:00+01:00",
+          "rain_mm": 51.97,
+          "rain_rate_max_mm_h": 8.05,
+          "rain_cumulative_mm": 156.46,
+          "day": "2025-03"
+        },
+        {
+          "ts": 1743458400,
+          "time": "2025-04-01T00:00:00+02:00",
+          "rain_mm": 25.98,
+          "rain_rate_max_mm_h": 8.94,
+          "rain_cumulative_mm": 182.44,
+          "day": "2025-04"
+        },
+        {
+          "ts": 1746050400,
+          "time": "2025-05-01T00:00:00+02:00",
+          "rain_mm": 30.18,
+          "rain_rate_max_mm_h": 28.33,
+          "rain_cumulative_mm": 212.62,
+          "day": "2025-05"
+        },
+        {
+          "ts": 1748728800,
+          "time": "2025-06-01T00:00:00+02:00",
+          "rain_mm": 3.35,
+          "rain_rate_max_mm_h": 6.55,
+          "rain_cumulative_mm": 215.97,
+          "day": "2025-06"
+        },
+        {
+          "ts": 1751320800,
+          "time": "2025-07-01T00:00:00+02:00",
+          "rain_mm": 17.88,
+          "rain_rate_max_mm_h": 13.66,
+          "rain_cumulative_mm": 233.85,
+          "day": "2025-07"
+        },
+        {
+          "ts": 1753999200,
+          "time": "2025-08-01T00:00:00+02:00",
+          "rain_mm": 40.79,
+          "rain_rate_max_mm_h": 76.91,
+          "rain_cumulative_mm": 274.64,
+          "day": "2025-08"
+        },
+        {
+          "ts": 1756677600,
+          "time": "2025-09-01T00:00:00+02:00",
+          "rain_mm": 55.6,
+          "rain_rate_max_mm_h": 47.86,
+          "rain_cumulative_mm": 330.24,
+          "day": "2025-09"
+        },
+        {
+          "ts": 1759269600,
+          "time": "2025-10-01T00:00:00+02:00",
+          "rain_mm": 13.69,
+          "rain_rate_max_mm_h": 7.04,
+          "rain_cumulative_mm": 343.93,
+          "day": "2025-10"
+        },
+        {
+          "ts": 1761951600,
+          "time": "2025-11-01T00:00:00+01:00",
+          "rain_mm": 48.62,
+          "rain_rate_max_mm_h": 19.16,
+          "rain_cumulative_mm": 392.55,
+          "day": "2025-11"
+        },
+        {
+          "ts": 1764543600,
+          "time": "2025-12-01T00:00:00+01:00",
+          "rain_mm": 88.85,
+          "rain_rate_max_mm_h": 7.18,
+          "rain_cumulative_mm": 481.4,
+          "day": "2025-12"
+        },
+        {
+          "ts": 1767222000,
+          "time": "2026-01-01T00:00:00+01:00",
+          "rain_mm": 130.76,
+          "rain_rate_max_mm_h": 14.07,
+          "rain_cumulative_mm": 612.16,
+          "day": "2026-01"
+        },
+        {
+          "ts": 1769900400,
+          "time": "2026-02-01T00:00:00+01:00",
+          "rain_mm": 82.14,
+          "rain_rate_max_mm_h": 12.56,
+          "rain_cumulative_mm": 694.3,
+          "day": "2026-02"
+        },
+        {
+          "ts": 1772319600,
+          "time": "2026-03-01T00:00:00+01:00",
+          "rain_mm": 41.07,
+          "rain_rate_max_mm_h": 13.35,
+          "rain_cumulative_mm": 735.37,
+          "day": "2026-03"
+        },
+        {
+          "ts": 1775298600,
+          "time": "2026-04-04T12:30:00+02:00",
+          "rain_mm": 0.0,
+          "rain_rate_max_mm_h": 0.0,
+          "rain_cumulative_mm": 735.37,
+          "day": "2026-04"
+        }
+      ]
+    }
+  }
+}

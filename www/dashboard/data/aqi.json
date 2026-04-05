@@ -1,0 +1,21 @@
+{
+  "updated": "2026-04-05 08:00:03",
+  "local": {
+    "aqi": 6,
+    "category": "Buona",
+    "color": "#22c55e",
+    "pm1_0": 0.0,
+    "pm2_5": 1.0,
+    "pm10_0": 1.0,
+    "pm25_aqi": 6,
+    "pm10_aqi": 1
+  },
+  "area": {
+    "aqi": 55,
+    "category": "moderate",
+    "color": "FFFF00",
+    "dominantPollutant": "pm2.5",
+    "source": "Xweather"
+  },
+  "comparison": "migliore dell'area"
+}

@@ -1,0 +1,112 @@
+{
+  "station": {
+    "name": "GDD Weather Station Rome Monteverde",
+    "location": "Roma",
+    "latitude": 41.88,
+    "longitude": 12.44,
+    "units": "metric"
+  },
+  "ui": {
+    "refresh_seconds": 60,
+    "forecast_days": 5,
+    "show_forecast_compare": true
+  },
+  "providers": {
+    "primary_forecast": "pws",
+    "secondary_forecast": "wu",
+    "weatherunderground_enabled": true,
+    "pwsweather_enabled": true
+  },
+  "xweather": {
+    "client_id": "XXX",
+    "client_secret": "XXX"
+  },
+  "weatherunderground": {
+    "enabled": true,
+    "forecast_url": "https://api.weather.com/v3/wx/forecast/daily/5day?geocode=41.88,12.44&format=json&units=m&language=it&apiKey=XXX"
+  },
+  "links": {
+    "weatherunderground": "https://www.wunderground.com/dashboard/pws/IROME7505",
+    "pwsweather": "https://www.pwsweather.com/station/pws/ROMEXIIGDD"
+  },
+  "aqi": {
+    "enabled": true,
+    "xweather_enabled": true
+  },
+  "nearby_stations": {
+    "enabled": false,
+    "radius_km": 50,
+    "max_items": 6
+  },
+  "nearby_places": {
+    "enabled": true,
+    "max_items": 6,
+    "places": [
+      { "name": "Roma Centro", "p": "41.9028,12.4964" },
+      { "name": "Trastevere", "p": "41.8894,12.4700" },
+      { "name": "EUR", "p": "41.8300,12.4700" },
+      { "name": "Tiburtina", "p": "41.9100,12.5300" },
+      { "name": "Fiumicino", "p": "41.7700,12.2300" },
+      { "name": "Ciampino", "p": "41.8000,12.6000" }
+    ]
+  },
+  "openweather": {
+    "api_key": "XXX"
+  },
+  "radar": {
+    "enabled": true,
+    "center_lat": 41.88,
+    "center_lon": 12.44,
+    "zoom": 7,
+    "rainviewer_color": 6,
+    "rainviewer_smooth": 1,
+    "rainviewer_snow": 1,
+    "frame_interval_ms": 700
+  },
+  "paths": {
+    "public_data_dir": "/var/www/html/weewx/dashboard/data"
+  },
+  "history": {
+    "enabled": true,
+    "db": {
+      "host": "127.0.0.1",
+      "port": 3306,
+      "name": "weewx",
+      "user": "weewx",
+      "password": "XXX",
+      "table": "archive"
+    },
+    "ranges": {
+      "temperature_24h_hours": 24,
+      "temperature_7d_days": 7,
+      "temperature_30d_days": 30,
+      "temperature_1y_days": 365,
+      "temperature_5y_years": 5,
+      "wind_24h_hours": 24,
+      "wind_7d_days": 7,
+      "wind_30d_days": 30,
+      "wind_1y_days": 365,
+      "wind_5y_years": 5,
+      "rain_24h_hours": 24,
+      "rain_7d_days": 7,
+      "rain_30d_days": 30,
+      "rain_1y_days": 365,
+      "rain_5y_years": 5,
+      "pressure_24h_hours": 24,
+      "pressure_7d_days": 7,
+      "pressure_30d_days": 30,
+      "rain_1y_days": 365,
+      "rain_5y_years": 5,
+      "solar_24h_hours": 24,
+      "solar_7d_days": 7,
+      "solar_30d_days": 30,
+      "solar_1y_days": 365,
+      "solar_5y_years": 5,
+      "aqi_24h_hours": 24,
+      "aqi_7d_days": 7,
+      "aqi_30d_days": 30,
+      "aqi_1y_days": 365,
+      "aqi_5y_years": 5
+    }
+  }
+}

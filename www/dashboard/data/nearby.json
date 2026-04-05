@@ -1,0 +1,91 @@
+{
+  "provider": "Xweather Conditions",
+  "updated": "2026-04-05 08:00:16",
+  "count": 6,
+  "places": [
+    {
+      "name": "Trastevere",
+      "country": "it",
+      "state": "lt",
+      "distance_km": 2.7,
+      "tempC": 10.83,
+      "weather": "Sunny",
+      "icon": "sunny.png",
+      "windKph": 2.23,
+      "windDirDeg": 76.0,
+      "pressureMb": 1025.0,
+      "humidity": 70.0,
+      "timestamp": 1775368800
+    },
+    {
+      "name": "Roma Centro",
+      "country": "it",
+      "state": "lt",
+      "distance_km": 5.3,
+      "tempC": 10.35,
+      "weather": "Sunny",
+      "icon": "sunny.png",
+      "windKph": 1.85,
+      "windDirDeg": 173.0,
+      "pressureMb": 1024.9,
+      "humidity": 73.0,
+      "timestamp": 1775368800
+    },
+    {
+      "name": "EUR",
+      "country": "it",
+      "state": "lt",
+      "distance_km": 6.1,
+      "tempC": 11.79,
+      "weather": "Sunny",
+      "icon": "sunny.png",
+      "windKph": 2.88,
+      "windDirDeg": 50.0,
+      "pressureMb": 1025.0,
+      "humidity": 68.0,
+      "timestamp": 1775368800
+    },
+    {
+      "name": "Tiburtina",
+      "country": "it",
+      "state": "lt",
+      "distance_km": 8.2,
+      "tempC": 9.88,
+      "weather": "Sunny",
+      "icon": "sunny.png",
+      "windKph": 1.37,
+      "windDirDeg": 228.0,
+      "pressureMb": 1024.9,
+      "humidity": 77.0,
+      "timestamp": 1775368800
+    },
+    {
+      "name": "Ciampino",
+      "country": "it",
+      "state": "lt",
+      "distance_km": 16.0,
+      "tempC": 9.34,
+      "weather": "Mostly Sunny",
+      "icon": "fair.png",
+      "windKph": 3.56,
+      "windDirDeg": 88.0,
+      "pressureMb": 1024.0,
+      "humidity": 73.0,
+      "timestamp": 1775368800
+    },
+    {
+      "name": "Fiumicino",
+      "country": "it",
+      "state": "lt",
+      "distance_km": 21.3,
+      "tempC": 8.09,
+      "weather": "Mostly Sunny",
+      "icon": "fair.png",
+      "windKph": 4.46,
+      "windDirDeg": 65.0,
+      "pressureMb": 1025.0,
+      "humidity": 74.0,
+      "timestamp": 1775368800
+    }
+  ]
+}

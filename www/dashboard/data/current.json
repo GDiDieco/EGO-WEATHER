@@ -1,0 +1,22 @@
+{
+  "updated": "05/04/2026 08:15:00",
+  "outsideTemp": "12,6°C",
+  "heatIndex": "11,2°C",
+  "windChill": "12,6°C",
+  "dewPoint": "2,4°C",
+  "outsideHumidity": "50%",
+  "barometer": "1026,7 mbar",
+  "windSpeed": "5 km/h",
+  "windDir": "044°",
+  "windGust": "8 km/h",
+  "rainToday": "0,00 cm",
+  "rainRate": "0,00 cm/h",
+  "uvIndex": "0,4",
+  "radiation": "592 W/m²",
+  "insideTemp": "   N/A",
+  "insideHumidity": "   N/A",
+  "temperature1": "19,3°C",
+  "pm1_0": "0 µg/m³",
+  "pm2_5": "0 µg/m³",
+  "pm10_0": "0 µg/m³"
+}

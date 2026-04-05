@@ -1,0 +1,46 @@
+{
+  "enabled": true,
+  "updated": "2026-04-05 08:10:01",
+  "host": "https://tilecache.rainviewer.com",
+  "frames": [
+    {
+      "time": 1775364600,
+      "path": "/v2/radar/c2dc75ab55cc"
+    },
+    {
+      "time": 1775365200,
+      "path": "/v2/radar/74930bb4873b"
+    },
+    {
+      "time": 1775365800,
+      "path": "/v2/radar/92ae58f98ef9"
+    },
+    {
+      "time": 1775366400,
+      "path": "/v2/radar/a3f868fa87fe"
+    },
+    {
+      "time": 1775367000,
+      "path": "/v2/radar/88fb65d28176"
+    },
+    {
+      "time": 1775367600,
+      "path": "/v2/radar/2a80f17511a4"
+    },
+    {
+      "time": 1775368200,
+      "path": "/v2/radar/306892b8e88a"
+    },
+    {
+      "time": 1775368800,
+      "path": "/v2/radar/eb85bea95b53"
+    }
+  ],
+  "center_lat": 41.88,
+  "center_lon": 12.44,
+  "zoom": 7,
+  "color": 6,
+  "smooth": 1,
+  "snow": 1,
+  "frame_interval_ms": 700
+}

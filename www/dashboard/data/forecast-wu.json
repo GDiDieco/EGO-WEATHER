@@ -1,0 +1,250 @@
+{
+  "provider": {
+    "id": "wu",
+    "name": "Weather Underground"
+  },
+  "status": {
+    "ok": true,
+    "partial": true,
+    "stale": false,
+    "hasHourly": false,
+    "hasParts": true,
+    "hasDaily": true,
+    "message": "Hourly WU non disponibile per il piano/API corrente",
+    "lastSuccess": "2026-04-05T08:15:04"
+  },
+  "updated": "2026-04-05T08:15:04",
+  "location": {},
+  "summary": {
+    "text": "Quasi sereno. Massime 22° C. Venti da ONO, da 10 a 15 km/h.",
+    "icon": "☀️",
+    "tempTrend": null
+  },
+  "hourly": [],
+  "parts": [
+    {
+      "name": "Oggi",
+      "start": null,
+      "end": null,
+      "icon": "☀️",
+      "summary": "Quasi sereno. Massime 22° C. Venti da ONO, da 10 a 15 km/h.",
+      "temp": 22.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 1,
+      "windKmh": 16.0
+    },
+    {
+      "name": "Stasera",
+      "start": null,
+      "end": null,
+      "icon": "🌙",
+      "summary": "Quasi sereno. Minime 8° C. Venti da SE, da 10 a 15 km/h.",
+      "temp": 8.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 7,
+      "windKmh": 12.0
+    },
+    {
+      "name": "Domani",
+      "start": null,
+      "end": null,
+      "icon": "☀️",
+      "summary": "Quasi sereno. Caldo. Massime 23° C. Venti da NO, da 10 a 15 km/h.",
+      "temp": 23.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 7,
+      "windKmh": 15.0
+    },
+    {
+      "name": "Domani sera",
+      "start": null,
+      "end": null,
+      "icon": "⛅",
+      "summary": "Poco nuvoloso. Minime 10° C. Venti da SSE, da 10 a 15 km/h.",
+      "temp": 10.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 6,
+      "windKmh": 12.0
+    },
+    {
+      "name": "martedì",
+      "start": null,
+      "end": null,
+      "icon": "☀️",
+      "summary": "Quasi sereno. Caldo. Massime 22° C. Venti da SSO, da 10 a 15 km/h.",
+      "temp": 22.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 6,
+      "windKmh": 15.0
+    },
+    {
+      "name": "Martedì notte",
+      "start": null,
+      "end": null,
+      "icon": "🌙",
+      "summary": "Quasi sereno. Minime 9° C. Venti da SSE, da 10 a 15 km/h.",
+      "temp": 9.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 7,
+      "windKmh": 12.0
+    },
+    {
+      "name": "mercoledì",
+      "start": null,
+      "end": null,
+      "icon": "☀️",
+      "summary": "Quasi sereno. Massime 23° C. Venti da ONO, da 10 a 15 km/h.",
+      "temp": 23.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 6,
+      "windKmh": 15.0
+    },
+    {
+      "name": "Mercoledì notte",
+      "start": null,
+      "end": null,
+      "icon": "🌙",
+      "summary": "Quasi sereno. Minime 10° C. Venti da SSE, da 10 a 15 km/h.",
+      "temp": 10.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 6,
+      "windKmh": 12.0
+    },
+    {
+      "name": "giovedì",
+      "start": null,
+      "end": null,
+      "icon": "☀️",
+      "summary": "Quasi sereno. Massime 22° C. Venti da ONO, da 10 a 15 km/h.",
+      "temp": 22.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 5,
+      "windKmh": 16.0
+    },
+    {
+      "name": "Giovedì notte",
+      "start": null,
+      "end": null,
+      "icon": "🌙",
+      "summary": "Quasi sereno. Minime 11° C. Venti da SE, da 10 a 15 km/h.",
+      "temp": 11.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 6,
+      "windKmh": 13.0
+    },
+    {
+      "name": "venerdì",
+      "start": null,
+      "end": null,
+      "icon": "🌤️",
+      "summary": "Poco nuvoloso. Massime 20° C. Venti da ESE in rotazione a SO da 15 a 25 km/h.",
+      "temp": 20.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 6,
+      "windKmh": 18.0
+    },
+    {
+      "name": "Venerdì notte",
+      "start": null,
+      "end": null,
+      "icon": "⛅",
+      "summary": "Poco nuvoloso. Minime 10° C. Venti da N, da 10 a 15 km/h.",
+      "temp": 10.0,
+      "tempMin": null,
+      "tempMax": null,
+      "pop": 13,
+      "windKmh": 17.0
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-04-05",
+      "dayLabel": "Dom",
+      "icon": "☀️",
+      "summary": "Quasi sereno. Massime da 21 a 23° C e minime da 7 a 9° C.",
+      "tempMin": 8.0,
+      "tempMax": 22.0,
+      "pop": 7,
+      "rainMm": null,
+      "windKmh": null,
+      "humidity": null,
+      "sunrise": "06:46",
+      "sunset": "19:40"
+    },
+    {
+      "date": "2026-04-06",
+      "dayLabel": "Lun",
+      "icon": "☀️",
+      "summary": "Quasi sereno. Massime da 22 a 24° C e minime da 9 a 11° C.",
+      "tempMin": 10.0,
+      "tempMax": 23.0,
+      "pop": 6,
+      "rainMm": null,
+      "windKmh": null,
+      "humidity": null,
+      "sunrise": "06:44",
+      "sunset": "19:41"
+    },
+    {
+      "date": "2026-04-07",
+      "dayLabel": "Mar",
+      "icon": "☀️",
+      "summary": "Quasi sereno. Massime da 21 a 23° C e minime da 8 a 10° C.",
+      "tempMin": 9.0,
+      "tempMax": 22.0,
+      "pop": 6,
+      "rainMm": null,
+      "windKmh": null,
+      "humidity": null,
+      "sunrise": "06:43",
+      "sunset": "19:42"
+    },
+    {
+      "date": "2026-04-08",
+      "dayLabel": "Mer",
+      "icon": "☀️",
+      "summary": "Quasi sereno. Massime da 22 a 24° C e minime da 9 a 11° C.",
+      "tempMin": 10.0,
+      "tempMax": 23.0,
+      "pop": 5,
+      "rainMm": null,
+      "windKmh": null,
+      "humidity": null,
+      "sunrise": "06:41",
+      "sunset": "19:43"
+    },
+    {
+      "date": "2026-04-09",
+      "dayLabel": "Gio",
+      "icon": "🌤️",
+      "summary": "Quasi sereno. Massime da 21 a 23° C e minime da 10 a 12° C.",
+      "tempMin": 11.0,
+      "tempMax": 22.0,
+      "pop": 6,
+      "rainMm": null,
+      "windKmh": null,
+      "humidity": null,
+      "sunrise": "06:39",
+      "sunset": "19:44"
+    }
+  ],
+  "astronomy": {
+    "sunrise": "06:46",
+    "sunset": "19:40",
+    "moonrise": "23:35",
+    "moonset": "07:55",
+    "moonPhase": "Gibbosa calante",
+    "moonPhaseCode": "WNG"
+  }
+}

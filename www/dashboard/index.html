@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RPIWEATHER Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="./app.css" />
+  <link rel="icon" href="./static/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./static/favicon/favicon-96.png">
+  <link rel="apple-touch-icon" href="./static/favicon/favicon-96.png">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">RPIWEATHER</p>
+        <h1>Dashboard meteo di Giampiero</h1>
+        <p class="page-subtitle">Stazione meteo DIY Raspberry PI a Roma Monteverde</p>
+      </div>
+      <div class="page-actions">
+        <button class="ghost-button" id="refresh_button" type="button">Aggiorna ora</button>
+      </div>
+    </header>
+
+    <main class="page-content">
+		<section class="hero-current card">
+		  <div class="hero-current__layout">
+			<div class="hero-current__main">
+			  <div class="hero-current__topline">
+				<span class="status-dot"></span>
+				<span>Current Conditions</span>
+			  </div>
+
+			  <div class="hero-current__content">
+				<div class="hero-current__primary">
+				  <div class="hero-current__icon-wrap">
+					<div class="hero-current__icon-glow"></div>
+					<div class="hero-current__icon" id="hero_current_icon">⛅</div>
+				  </div>
+
+				  <div class="hero-current__temp-block">
+					<div class="hero-current__temp-row">
+					  <div class="hero-current__temp" id="hero_outside_temp">--</div>
+					  <div class="hero-current__temp-unit">°C</div>
+					</div>
+					<div class="hero-current__summary" id="hero_summary">Dati in aggiornamento</div>
+					<div class="hero-current__feels-line">Percepita <span id="hero_feels_like">--</span></div>
+				  </div>
+				</div>
+
+				<div class="hero-current__metrics-panel">
+				  <div id="hero_inline_metrics" class="hero-current__inline-metrics hero-current__inline-metrics--grid"></div>
+				</div>
+			  </div>
+
+			  <div id="hero_bottom_cards" class="hero-current__chips hero-current__chips--compact"></div>
+			</div>
+
+			<aside class="hero-alert card" id="hero_alert_card" hidden>
+			  <div class="hero-alert__top">
+				<div class="hero-alert__eyebrow">Alert condition</div>
+				<div class="hero-alert__icon" id="hero_alert_icon">✅</div>
+			  </div>
+
+			  <div class="hero-alert__title" id="hero_alert_title">Nessuna allerta attiva</div>
+			  <div class="hero-alert__text" id="hero_alert_text">Situazione regolare sulla zona della stazione.</div>
+
+			  <div class="hero-alert__footer">
+				<button class="ghost-button" id="alerts_open_button" type="button">Dettaglio</button>
+			  </div>
+			</aside>
+		  </div>
+		</section>
+      <section class="tiles-section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">OVERVIEW</p>
+            <h2>Tile meteo</h2>
+          </div>
+          <div class="section-note">Forecast doppio: confronto provider in tile compatta e dettaglio completo nel pannello storico.</div>
+        </div>
+
+        <div class="tiles-grid" id="tiles_grid">
+          <article class="weather-tile card" id="tile_temperature">
+            <div class="weather-tile__header">
+              <div>
+                <p class="weather-tile__title">Temperatura</p>
+                <p class="weather-tile__subtitle" id="temperature_subtitle">Condizioni termiche attuali</p>
+              </div>
+            </div>
+            <div class="weather-tile__body">
+              <div class="weather-tile__value" id="temperature_value">--</div>
+              <p class="weather-tile__summary" id="temperature_summary">--</p>
+              <div class="weather-tile__meta" id="temperature_meta"></div>
+            </div>
+            <div class="weather-tile__footer">
+              <button class="tile-history-btn" type="button" data-history-open="temperature">Storico</button>
+            </div>
+          </article>
+
+          <article class="weather-tile card" id="tile_wind">
+            <div class="weather-tile__header">
+              <div>
+                <p class="weather-tile__title">Vento</p>
+                <p class="weather-tile__subtitle" id="wind_subtitle">Velocità e direzione</p>
+              </div>
+            </div>
+            <div class="weather-tile__body">
+              <div class="weather-tile__value" id="wind_value">--</div>
+              <p class="weather-tile__summary" id="wind_summary">--</p>
+              <div class="weather-tile__meta" id="wind_meta"></div>
+            </div>
+            <div class="weather-tile__footer">
+              <button class="tile-history-btn" type="button" data-history-open="wind">Storico</button>
+            </div>
+          </article>
+
+          <article class="weather-tile card" id="tile_barometer">
+            <div class="weather-tile__header">
+              <div>
+                <p class="weather-tile__title">Barometro</p>
+                <p class="weather-tile__subtitle" id="barometer_subtitle">Pressione atmosferica</p>
+              </div>
+            </div>
+            <div class="weather-tile__body">
+              <div class="weather-tile__value" id="barometer_value">--</div>
+              <p class="weather-tile__summary" id="barometer_summary">--</p>
+              <div class="weather-tile__meta" id="barometer_meta"></div>
+            </div>
+            <div class="weather-tile__footer">
+              <button class="tile-history-btn" type="button" data-history-open="pressure">Storico</button>
+            </div>
+          </article>
+
+          <article class="weather-tile card weather-tile--forecast" id="tile_forecast">
+            <div class="weather-tile__header">
+              <div>
+                <p class="weather-tile__title">Forecast</p>
+                <p class="weather-tile__subtitle" id="forecast_subtitle">Confronto compatto dei due provider</p>
+              </div>
+            </div>
+            <div class="weather-tile__body weather-tile__body--forecast-compare">
+              <div class="forecast-compact-list" id="forecast_compact_list"></div>
+              <p class="weather-tile__summary" id="forecast_summary">--</p>
+            </div>
+            <div class="weather-tile__footer">
+              <button class="tile-history-btn" type="button" data-history-open="forecast">Storico</button>
+            </div>
+          </article>
+
+          <article class="weather-tile card" id="tile_daylight">
+            <div class="weather-tile__header">
+              <div>
+                <p class="weather-tile__title">Daylight</p>
+                <p class="weather-tile__subtitle" id="daylight_subtitle">Alba, tramonto e luce</p>
+              </div>
+            </div>
+            <div class="weather-tile__body">
+              <div class="weather-tile__value" id="daylight_value">--</div>
+              <p class="weather-tile__summary" id="daylight_summary">--</p>
+              <div class="weather-tile__meta" id="daylight_meta"></div>
+            </div>
+            <div class="weather-tile__footer">
+              <button class="tile-history-btn" type="button" data-history-open="daylight">Storico</button>
+            </div>
+          </article>
+
+          <article class="weather-tile card" id="tile_rainfall">
+            <div class="weather-tile__header">
+              <div>
+                <p class="weather-tile__title">Rainfall</p>
+                <p class="weather-tile__subtitle" id="rainfall_subtitle">Accumulo e intensità</p>
+              </div>
+            </div>
+            <div class="weather-tile__body">
+              <div class="weather-tile__value" id="rainfall_value">--</div>
+              <p class="weather-tile__summary" id="rainfall_summary">--</p>
+              <div class="weather-tile__meta" id="rainfall_meta"></div>
+            </div>
+            <div class="weather-tile__footer">
+              <button class="tile-history-btn" type="button" data-history-open="rain">Storico</button>
+            </div>
+          </article>
+
+          <article class="weather-tile card" id="tile_uv">
+            <div class="weather-tile__header">
+              <div>
+                <p class="weather-tile__title">UV</p>
+                <p class="weather-tile__subtitle" id="uv_subtitle">Indice e radiazione</p>
+              </div>
+            </div>
+            <div class="weather-tile__body">
+              <div class="weather-tile__value" id="uv_value">--</div>
+              <p class="weather-tile__summary" id="uv_summary">--</p>
+              <div class="weather-tile__meta" id="uv_meta"></div>
+            </div>
+            <div class="weather-tile__footer">
+              <button class="tile-history-btn" type="button" data-history-open="solar">Storico</button>
+            </div>
+          </article>
+
+          <article class="weather-tile card" id="tile_aqi">
+            <div class="weather-tile__header">
+              <div>
+                <p class="weather-tile__title">AQI</p>
+                <p class="weather-tile__subtitle" id="aqi_subtitle">Qualità dell’aria</p>
+              </div>
+            </div>
+            <div class="weather-tile__body">
+              <div class="weather-tile__value" id="aqi_value">--</div>
+              <p class="weather-tile__summary" id="aqi_summary">--</p>
+              <div class="weather-tile__meta" id="aqi_meta"></div>
+            </div>
+            <div class="weather-tile__footer">
+              <button class="tile-history-btn" type="button" data-history-open="aqi">Storico</button>
+            </div>
+          </article>
+
+          <article class="weather-tile card" id="tile_astronomy">
+            <div class="weather-tile__header">
+              <div>
+                <p class="weather-tile__title">Astronomy</p>
+                <p class="weather-tile__subtitle" id="astronomy_subtitle">Luna e cicli</p>
+              </div>
+            </div>
+            <div class="weather-tile__body">
+              <div class="weather-tile__value" id="astronomy_value">--</div>
+              <p class="weather-tile__summary" id="astronomy_summary">--</p>
+              <div class="weather-tile__meta" id="astronomy_meta"></div>
+            </div>
+            <div class="weather-tile__footer">
+              <button class="tile-history-btn" type="button" data-history-open="astronomy">Storico</button>
+            </div>
+          </article>
+		  
+		  <article class="weather-tile card" id="tile_nearby">
+			  <div class="weather-tile__header">
+				<div>
+				  <p class="weather-tile__title">Nearby</p>
+				  <p class="weather-tile__subtitle" id="nearby_subtitle">Condizioni nelle località vicine</p>
+				</div>
+			  </div>
+			  <div class="weather-tile__body">
+				<div class="weather-tile__value" id="nearby_value">--</div>
+				<p class="weather-tile__summary" id="nearby_summary">--</p>
+				<div class="weather-tile__meta" id="nearby_meta"></div>
+			  </div>
+			  <div class="weather-tile__footer"></div>
+
+		  </article>
+		  
+        </div>
+      </section>
+
+		<section class="radar-panel card">
+		  <div class="section-head section-head--compact">
+			<div>
+			  <p class="eyebrow">RADAR</p>
+			  <h2>RainViewer</h2>
+			</div>
+			<div class="section-note">Aggiornato: <span id="radar_updated">--</span></div>
+		  </div>
+
+		  <div class="radar-toolbar">
+			<div class="radar-toolbar__left">
+			  <button class="ghost-button" type="button" id="radar_prev">◀</button>
+			  <button class="ghost-button" type="button" id="radar_play">Play</button>
+			  <button class="ghost-button" type="button" id="radar_next">▶</button>
+			</div>
+			<div class="radar-toolbar__right">
+			  <span class="radar-badge">Frame: <strong id="radar_frame_label">--</strong></span>
+			</div>
+		  </div>
+
+		  <div id="radar_map" class="radar-map" aria-label="Radar meteo"></div>
+		</section>
+
+		<aside class="history-panel card history-panel--full" id="history_panel">
+		  <div class="section-head section-head--compact">
+			<div>
+			  <p class="eyebrow">FORECAST COMPARE</p>
+			  <h2 id="history_title">Dettaglio forecast compare</h2>
+			</div>
+		  </div>
+
+		  <div class="history-panel__content">
+			<p id="history_description">
+			  Confronto completo tra i provider forecast con dettaglio orario, parti del giorno e riepilogo finale.
+			</p>
+			<div class="history-toolbar" id="history_toolbar"></div>
+			<div class="history-placeholder-list" id="history_placeholder_list"></div>
+		  </div>
+		</aside>
+
+    </main>
+  </div>
+
+	<div id="historyModal" class="history-modal" aria-hidden="true">
+	  <div class="history-modal__backdrop" data-history-close></div>
+
+	  <div class="history-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="historyModalTitle">
+		<div class="history-modal__header">
+		  <div>
+			<div class="history-modal__eyebrow">Storico</div>
+			<h3 id="historyModalTitle" class="history-modal__title">Storico metrica</h3>
+		  </div>
+
+		  <button class="history-modal__close" type="button" data-history-close aria-label="Chiudi">
+			✕
+		  </button>
+		</div>
+
+		<div class="history-modal__toolbar">
+			<div class="history-range-switch">
+			  <button type="button" class="history-range-btn is-active" data-range="24h">24h</button>
+			  <button type="button" class="history-range-btn" data-range="7d">7 giorni</button>
+			  <button type="button" class="history-range-btn" data-range="30d">30 giorni</button>
+			  <button type="button" class="history-range-btn" data-range="1y">1 anno</button>
+			  <button type="button" class="history-range-btn" data-range="5y">5 anni</button>
+			</div>
+		  <div class="history-modal__status" id="historyStatus">Caricamento...</div>
+		</div>
+
+		<div class="history-modal__body">
+		  <div class="history-chart-wrap">
+			<canvas id="historyChart"></canvas>
+		  </div>
+
+		  <div id="historySummary" class="history-summary"></div>
+		</div>
+	  </div>
+	</div>
+
+	<div id="alertsModal" class="history-modal" aria-hidden="true">
+	  <div class="history-modal__backdrop" data-alerts-close></div>
+
+	  <div class="history-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="alertsModalTitle">
+		<div class="history-modal__header">
+		  <div>
+			<div class="history-modal__eyebrow">Weather Alerts</div>
+			<h3 id="alertsModalTitle" class="history-modal__title">Allerte meteo</h3>
+		  </div>
+
+		  <button class="history-modal__close" type="button" data-alerts-close aria-label="Chiudi">✕</button>
+		</div>
+
+		<div class="history-modal__body">
+		  <div id="alertsModalList" class="alerts-modal-list"></div>
+		</div>
+	  </div>
+	</div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./history-modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "updated": "2026-04-02 00:34:07",
+  "center_lat": 41.88,
+  "center_lon": 12.44,
+  "zoom": 8,
+  "layer": "radar,admin",
+  "opacity": 0.75,
+  "xweather_client_id": "xxx",
+  "xweather_client_secret": "xxx"
+}

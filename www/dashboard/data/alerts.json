@@ -1,0 +1,19 @@
+{
+  "provider": {
+    "id": "xweather",
+    "name": "Xweather Alerts"
+  },
+  "status": {
+    "ok": true,
+    "stale": false,
+    "hasAlerts": false,
+    "message": "Nessuna allerta attiva",
+    "lastSuccess": "2026-04-05T08:10:01"
+  },
+  "updated": "2026-04-05T08:10:01",
+  "location": {
+    "latitude": 41.88,
+    "longitude": 12.44
+  },
+  "alerts": []
+}
