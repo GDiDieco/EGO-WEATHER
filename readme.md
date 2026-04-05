@@ -1,4 +1,4 @@
-# 🌦️ RPI Weather Dashboard
+# 🌦️ EGO-WEATHER Dashboard
 
 A modern and responsive weather dashboard designed for Raspberry Pi, powered by **WeeWX** and external weather APIs (e.g. Xweather).
 
@@ -8,7 +8,7 @@ This project provides a clean and informative interface for real-time conditions
 
 ## 📸 Preview
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/EGO-Weather_current.png)
 
 ---
 
