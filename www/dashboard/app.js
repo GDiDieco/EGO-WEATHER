@@ -45,6 +45,7 @@ const HISTORY_CONFIG = {
 
 const DASHBOARD_STATE = {
   current: null,
+  currentCondition: null,
   forecastPws: null,
   forecastWu: null,
   aqi: null,
@@ -242,37 +243,122 @@ function formatHourLabel(value) {
 
 function weatherIcon(value, fallback = '⛅') {
   if (!value) return fallback;
+
   const raw = String(value).trim();
   if (!raw) return fallback;
-  if (/^[☀-⛈🌤🌥🌦🌧🌨🌩🌪🌫🌬🌙⭐❄️⛅☁️💨]+$/u.test(raw)) return raw;
-  const key = raw.toLowerCase().replace(/[^a-z0-9]+/g, '');
+
+  if (/^[☀-⛈🌤🌥🌦🌧🌨🌩🌪🌫🌬🌙⭐❄️⛅☁️💨]+$/u.test(raw)) {
+    return raw;
+  }
+
+  const normalized = raw.toLowerCase().replace(/\.(png|svg|jpg|jpeg|webp)$/i, '');
+  const key = normalized.replace(/[^a-z0-9]+/g, '');
+
   const map = {
     sunny: '☀️',
     clear: '☀️',
+    clears: '☀️',
     clearday: '☀️',
+    clearn: '🌙',
     clearnight: '🌙',
     fair: '🌤️',
     mostlysunny: '🌤️',
+    pcloudy: '⛅',
     partlycloudy: '⛅',
     partlycloudynight: '☁️',
+    mcloudy: '☁️',
     mostlycloudy: '☁️',
     cloudy: '☁️',
     overcast: '☁️',
     lightrain: '🌦️',
     rain: '🌧️',
+    rainshowers: '🌧️',
     showers: '🌦️',
+    drizzle: '🌦️',
     chancetstorms: '⛈️',
     tstorms: '⛈️',
+    tstorm: '⛈️',
     thunderstorm: '⛈️',
     snow: '❄️',
     sleet: '🌨️',
     flurries: '🌨️',
     fog: '🌫️',
+    mist: '🌫️',
     haze: '🌫️',
     windy: '💨',
     wind: '💨'
   };
+
   return map[key] || fallback;
+}
+
+function normalizeConditionLabel(value) {
+  const raw = safeValue(value, '').toLowerCase();
+  if (!raw) return null;
+
+  if (raw.includes('fog') || raw.includes('mist')) return 'Fog';
+  if (raw.includes('haze')) return 'Haze';
+  if (raw.includes('clear')) return 'Clear';
+  if (raw.includes('cloud')) return 'Cloudy';
+  if (raw.includes('rain') || raw.includes('drizzle') || raw.includes('shower')) return 'Rain';
+  if (raw.includes('storm') || raw.includes('thunder')) return 'Thunderstorm';
+  if (raw.includes('snow')) return 'Snow';
+
+  return value;
+}
+
+function deriveLocalConditionFallback(current) {
+  const humidity = parseNumber(current?.outsideHumidity);
+  const wind = parseNumber(current?.windSpeed);
+  const outside = parseNumber(current?.outsideTemp);
+  const dew = parseNumber(current?.dewPoint);
+
+  if (
+    humidity !== null &&
+    humidity >= 92 &&
+    wind !== null &&
+    wind < 3 &&
+    outside !== null &&
+    dew !== null &&
+    Math.abs(outside - dew) <= 1.5
+  ) {
+    return {
+      weather: 'Fog',
+      icon: 'fog.png'
+    };
+  }
+
+  if (humidity !== null && humidity >= 95 && wind !== null && wind < 3) {
+    return {
+      weather: 'Fog',
+      icon: 'fog.png'
+    };
+  }
+
+  return null;
+}
+
+function pickCurrentCondition(current, currentCondition, primaryForecast) {
+  const apiCondition = currentCondition?.condition || null;
+  const fallbackLocal = deriveLocalConditionFallback(current);
+  const forecastDaily = primaryForecast?.daily?.[0] || {};
+
+  const chosen = apiCondition?.weather
+    ? {
+        weather: normalizeConditionLabel(apiCondition.weather) || apiCondition.weather,
+        icon: apiCondition.icon || forecastDaily.raw?.icon || forecastDaily.icon
+      }
+    : fallbackLocal
+      ? fallbackLocal
+      : {
+          weather: normalizeConditionLabel(forecastDaily.summary) || cleanForecastSummary(forecastDaily.summary),
+          icon: forecastDaily.raw?.icon || forecastDaily.icon
+        };
+
+  return {
+    weather: safeValue(chosen.weather, 'Condizioni attuali'),
+    icon: chosen.icon || forecastDaily.raw?.icon || forecastDaily.icon || '⛅'
+  };
 }
 
 function windCardinal(raw) {
@@ -794,18 +880,17 @@ function pickHeroTheme(summary, icon) {
   return 'is-clear';
 }
 
-function renderHero(current, primaryForecast) {
-  const heroSummary = primaryForecast?.daily?.[0]?.summary
-    ? cleanForecastSummary(primaryForecast.daily[0].summary)
-    : 'Condizioni attuali dalla stazione';
+function renderHero(current, primaryForecast, currentCondition) {	
+  const currentVisual = pickCurrentCondition(current, currentCondition, primaryForecast);
+  const heroSummary = currentVisual.weather;
 
   const heroEl = document.querySelector('.hero-current');
   if (heroEl) {
     heroEl.classList.remove('is-clear', 'is-partly-cloudy', 'is-cloudy', 'is-rainy');
-    heroEl.classList.add(pickHeroTheme(heroSummary, primaryForecast?.daily?.[0]?.icon));
+    heroEl.classList.add(pickHeroTheme(heroSummary, currentVisual.icon));
   }
 
-  setText('hero_current_icon', weatherIcon(primaryForecast?.daily?.[0]?.icon, '⛅'));
+  setText('hero_current_icon', weatherIcon(currentVisual.icon, '⛅'));
   
   const windSpeed = safeValue(current.windSpeed);
   const windDir = windDirectionToText(current.windDir);
@@ -821,9 +906,9 @@ function renderHero(current, primaryForecast) {
 
 	setHtml('hero_inline_metrics', `
 	  <div class="hero-inline-stat">💧 <span>Umidità</span> <strong>${safeValue(current.outsideHumidity)}</strong></div>
+	  <div class="hero-inline-stat hero-inline-stat--rain">☔ <span>Pioggia</span> <strong>oggi ${rainToday} · rate ${rainRate}</strong></div>
 	  <div class="hero-inline-stat">🌬 <span>Vento</span> <strong>${windSpeed} · ${windDir}</strong></div>
 	  <div class="hero-inline-stat">💨 <span>Gust</span> <strong>${gust}</strong></div>
-	  <div class="hero-inline-stat hero-inline-stat--rain">☔ <span>Pioggia</span> <strong>oggi ${rainToday} · rate ${rainRate}</strong></div>
 	  <div class="hero-inline-stat">📈 <span>Pressione</span> <strong>${safeValue(current.barometer)}</strong></div>
 	  <div class="hero-inline-stat">💠 <span>Dew</span> <strong>${safeValue(current.dewPoint)}</strong></div>
 	  <div class="hero-inline-stat hero-inline-stat--uv">☀️ <span>UV</span> <strong class="hero-inline-stat__badge hero-inline-stat__badge--uv">${uvValue}</strong></div>
@@ -1886,8 +1971,9 @@ function bindRadarControls() {
 
 async function loadDashboard() {
   try {
-    const [current, forecastPwsRaw, forecastWuRaw, aqi, alerts, nearby] = await Promise.all([
+    const [current, currentCondition, forecastPwsRaw, forecastWuRaw, aqi, alerts, nearby] = await Promise.all([
       fetchJson('./data/current.json'),
+	  fetchJson('./data/current-condition.json').catch(() => null),
       fetchJson('./data/forecast-pws.json'),
       fetchJson('./data/forecast-wu.json'),
       fetchJson('./data/aqi.json'),
@@ -1896,6 +1982,7 @@ async function loadDashboard() {
     ]);
 
     DASHBOARD_STATE.current = current;
+	DASHBOARD_STATE.currentCondition = currentCondition;
     DASHBOARD_STATE.forecastPws = forecastPwsRaw;
     DASHBOARD_STATE.forecastWu = forecastWuRaw;
     DASHBOARD_STATE.aqi = aqi;
@@ -1906,7 +1993,7 @@ async function loadDashboard() {
     const forecastWu = normalizeForecast(forecastWuRaw);
     const primaryForecast = forecastPws.daily.length ? forecastPws : forecastWu;
 
-    renderHero(current, primaryForecast);
+    renderHero(current, primaryForecast, currentCondition);
     renderTemperatureTile(current);
     renderWindTile(current);
     renderBarometerTile(current);

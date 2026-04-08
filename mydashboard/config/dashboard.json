@@ -18,12 +18,12 @@
     "pwsweather_enabled": true
   },
   "xweather": {
-    "client_id": "XXX",
-    "client_secret": "XXX"
+    "client_id": "ZvN0PTv0hTS8vDqgwcP0I",
+    "client_secret": "0SYbxvG8bo9CFp3bwW4x0kNbkYUeAR2lIke0ZbE5"
   },
   "weatherunderground": {
     "enabled": true,
-    "forecast_url": "https://api.weather.com/v3/wx/forecast/daily/5day?geocode=41.88,12.44&format=json&units=m&language=it&apiKey=XXX"
+    "forecast_url": "https://api.weather.com/v3/wx/forecast/daily/5day?geocode=41.88,12.44&format=json&units=m&language=it&apiKey=553e99754e7b4f2cbe99754e7baf2c1b"
   },
   "links": {
     "weatherunderground": "https://www.wunderground.com/dashboard/pws/IROME7505",
@@ -51,7 +51,7 @@
     ]
   },
   "openweather": {
-    "api_key": "XXX"
+    "api_key": "6147155a9768916e08c7b0a0132b2b8a"
   },
   "radar": {
     "enabled": true,
@@ -73,7 +73,7 @@
       "port": 3306,
       "name": "weewx",
       "user": "weewx",
-      "password": "XXX",
+      "password": "PippoKennedy2020",
       "table": "archive"
     },
     "ranges": {
