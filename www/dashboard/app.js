@@ -45,7 +45,6 @@ const HISTORY_CONFIG = {
 
 const DASHBOARD_STATE = {
   current: null,
-  currentCondition: null,
   forecastPws: null,
   forecastWu: null,
   aqi: null,
@@ -107,6 +106,17 @@ function windDirectionToText(raw) {
   const dirs = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'];
   const index = Math.round(deg / 22.5) % 16;
   return `${dirs[index]} (${Math.round(deg)}°)`;
+}
+
+function overallAqiValue(aqi) {
+  const local = parseNumber(aqi?.local?.aqi);
+  const area = parseNumber(aqi?.area?.aqi);
+
+  if (local === null && area === null) return null;
+  if (local === null) return area;
+  if (area === null) return local;
+
+  return Math.max(local, area);
 }
 
 function classifyUv(value) {
@@ -243,122 +253,37 @@ function formatHourLabel(value) {
 
 function weatherIcon(value, fallback = '⛅') {
   if (!value) return fallback;
-
   const raw = String(value).trim();
   if (!raw) return fallback;
-
-  if (/^[☀-⛈🌤🌥🌦🌧🌨🌩🌪🌫🌬🌙⭐❄️⛅☁️💨]+$/u.test(raw)) {
-    return raw;
-  }
-
-  const normalized = raw.toLowerCase().replace(/\.(png|svg|jpg|jpeg|webp)$/i, '');
-  const key = normalized.replace(/[^a-z0-9]+/g, '');
-
+  if (/^[☀-⛈🌤🌥🌦🌧🌨🌩🌪🌫🌬🌙⭐❄️⛅☁️💨]+$/u.test(raw)) return raw;
+  const key = raw.toLowerCase().replace(/[^a-z0-9]+/g, '');
   const map = {
     sunny: '☀️',
     clear: '☀️',
-    clears: '☀️',
     clearday: '☀️',
-    clearn: '🌙',
     clearnight: '🌙',
     fair: '🌤️',
     mostlysunny: '🌤️',
-    pcloudy: '⛅',
     partlycloudy: '⛅',
     partlycloudynight: '☁️',
-    mcloudy: '☁️',
     mostlycloudy: '☁️',
     cloudy: '☁️',
     overcast: '☁️',
     lightrain: '🌦️',
     rain: '🌧️',
-    rainshowers: '🌧️',
     showers: '🌦️',
-    drizzle: '🌦️',
     chancetstorms: '⛈️',
     tstorms: '⛈️',
-    tstorm: '⛈️',
     thunderstorm: '⛈️',
     snow: '❄️',
     sleet: '🌨️',
     flurries: '🌨️',
     fog: '🌫️',
-    mist: '🌫️',
     haze: '🌫️',
     windy: '💨',
     wind: '💨'
   };
-
   return map[key] || fallback;
-}
-
-function normalizeConditionLabel(value) {
-  const raw = safeValue(value, '').toLowerCase();
-  if (!raw) return null;
-
-  if (raw.includes('fog') || raw.includes('mist')) return 'Fog';
-  if (raw.includes('haze')) return 'Haze';
-  if (raw.includes('clear')) return 'Clear';
-  if (raw.includes('cloud')) return 'Cloudy';
-  if (raw.includes('rain') || raw.includes('drizzle') || raw.includes('shower')) return 'Rain';
-  if (raw.includes('storm') || raw.includes('thunder')) return 'Thunderstorm';
-  if (raw.includes('snow')) return 'Snow';
-
-  return value;
-}
-
-function deriveLocalConditionFallback(current) {
-  const humidity = parseNumber(current?.outsideHumidity);
-  const wind = parseNumber(current?.windSpeed);
-  const outside = parseNumber(current?.outsideTemp);
-  const dew = parseNumber(current?.dewPoint);
-
-  if (
-    humidity !== null &&
-    humidity >= 92 &&
-    wind !== null &&
-    wind < 3 &&
-    outside !== null &&
-    dew !== null &&
-    Math.abs(outside - dew) <= 1.5
-  ) {
-    return {
-      weather: 'Fog',
-      icon: 'fog.png'
-    };
-  }
-
-  if (humidity !== null && humidity >= 95 && wind !== null && wind < 3) {
-    return {
-      weather: 'Fog',
-      icon: 'fog.png'
-    };
-  }
-
-  return null;
-}
-
-function pickCurrentCondition(current, currentCondition, primaryForecast) {
-  const apiCondition = currentCondition?.condition || null;
-  const fallbackLocal = deriveLocalConditionFallback(current);
-  const forecastDaily = primaryForecast?.daily?.[0] || {};
-
-  const chosen = apiCondition?.weather
-    ? {
-        weather: normalizeConditionLabel(apiCondition.weather) || apiCondition.weather,
-        icon: apiCondition.icon || forecastDaily.raw?.icon || forecastDaily.icon
-      }
-    : fallbackLocal
-      ? fallbackLocal
-      : {
-          weather: normalizeConditionLabel(forecastDaily.summary) || cleanForecastSummary(forecastDaily.summary),
-          icon: forecastDaily.raw?.icon || forecastDaily.icon
-        };
-
-  return {
-    weather: safeValue(chosen.weather, 'Condizioni attuali'),
-    icon: chosen.icon || forecastDaily.raw?.icon || forecastDaily.icon || '⛅'
-  };
 }
 
 function windCardinal(raw) {
@@ -472,8 +397,10 @@ function uvBadgeValue(current) {
 }
 
 function aqiBadgeValue(aqi) {
+  const area = aqi?.area?.aqi;
   const local = aqi?.local?.aqi;
-  return local ? `${local}` : '--';
+  const value = area !== null && area !== undefined ? area : local;
+  return value !== null && value !== undefined ? `${value}` : '--';
 }
 
 function buildMetaItems(items = []) {
@@ -562,11 +489,19 @@ function alertSeverityLabel(value) {
 
 function alertsThemeClass(alerts) {
   const list = Array.isArray(alerts?.alerts) ? alerts.alerts : [];
-  const severities = list.map(a => String(a.severity || '').toLowerCase());
+  if (!list.length) return 'hero-alert--ok';
 
-  if (severities.some(s => s.includes('extreme') || s.includes('severe'))) return 'alerts-strip--danger';
-  if (severities.some(s => s.includes('moderate') || s.includes('minor'))) return 'alerts-strip--warn';
-  return 'alerts-strip--ok';
+  const severities = list.map(a => (a.severity || '').toLowerCase());
+
+  if (severities.some(s => s.includes('extreme') || s.includes('severe'))) {
+    return 'hero-alert--danger';
+  }
+
+  if (severities.some(s => s.includes('moderate') || s.includes('minor'))) {
+    return 'hero-alert--warn';
+  }
+
+  return 'hero-alert--warn'; // fallback se non riconosciuto
 }
 
 function alertsIcon(alerts) {
@@ -600,10 +535,8 @@ function renderAlertsStrip(alerts) {
   card.classList.remove('hero-alert--ok', 'hero-alert--warn', 'hero-alert--danger');
 
   const theme = alertsThemeClass(alerts);
-  if (theme === 'alerts-strip--danger') card.classList.add('hero-alert--danger');
-  else if (theme === 'alerts-strip--warn') card.classList.add('hero-alert--warn');
-  else card.classList.add('hero-alert--ok');
-
+  card.classList.add(theme);
+  
   setText('hero_alert_icon', alertsIcon(alerts));
 
   if (!list.length) {
@@ -612,17 +545,22 @@ function renderAlertsStrip(alerts) {
     return;
   }
 
-  const first = list[0];
-  const title = list.length === 1
-    ? safeValue(first.title, 'Allerta meteo')
-    : `${list.length} allerte attive`;
-
-  const text = list.length === 1
-    ? `${alertSeverityLabel(first.severity)} · ${safeValue(first.source, 'Fonte non disponibile')}`
-    : `${safeValue(first.title, 'Allerta meteo')} · ${alertSeverityLabel(first.severity)}`;
-
+  const title = list.length === 1 ? '1 allerta attiva' : `${list.length} allerte attive`;
   setText('hero_alert_title', title);
-  setText('hero_alert_text', text);
+
+  const preview = list.slice(0, 2).map((alert) => {
+    const label = safeValue(alert.title, 'Allerta meteo');
+    const sev = alertSeverityLabel(alert.severity);
+    const src = safeValue(alert.source, 'Fonte meteo');
+    return `
+      <div class="hero-alert__item">
+        <div class="hero-alert__item-title">${label}</div>
+        <div class="hero-alert__item-meta">${sev} · ${src}</div>
+      </div>
+    `;
+  }).join('');
+
+  setHtml('hero_alert_text', preview);
 }
 
 function renderAlertsModal(alerts) {
@@ -880,17 +818,18 @@ function pickHeroTheme(summary, icon) {
   return 'is-clear';
 }
 
-function renderHero(current, primaryForecast, currentCondition) {	
-  const currentVisual = pickCurrentCondition(current, currentCondition, primaryForecast);
-  const heroSummary = currentVisual.weather;
+function renderHero(current, primaryForecast) {
+  const heroSummary = primaryForecast?.daily?.[0]?.summary
+    ? cleanForecastSummary(primaryForecast.daily[0].summary)
+    : 'Condizioni attuali dalla stazione';
 
   const heroEl = document.querySelector('.hero-current');
   if (heroEl) {
     heroEl.classList.remove('is-clear', 'is-partly-cloudy', 'is-cloudy', 'is-rainy');
-    heroEl.classList.add(pickHeroTheme(heroSummary, currentVisual.icon));
+    heroEl.classList.add(pickHeroTheme(heroSummary, primaryForecast?.daily?.[0]?.icon));
   }
 
-  setText('hero_current_icon', weatherIcon(currentVisual.icon, '⛅'));
+  setText('hero_current_icon', weatherIcon(primaryForecast?.daily?.[0]?.icon, '⛅'));
   
   const windSpeed = safeValue(current.windSpeed);
   const windDir = windDirectionToText(current.windDir);
@@ -906,9 +845,9 @@ function renderHero(current, primaryForecast, currentCondition) {
 
 	setHtml('hero_inline_metrics', `
 	  <div class="hero-inline-stat">💧 <span>Umidità</span> <strong>${safeValue(current.outsideHumidity)}</strong></div>
-	  <div class="hero-inline-stat hero-inline-stat--rain">☔ <span>Pioggia</span> <strong>oggi ${rainToday} · rate ${rainRate}</strong></div>
 	  <div class="hero-inline-stat">🌬 <span>Vento</span> <strong>${windSpeed} · ${windDir}</strong></div>
 	  <div class="hero-inline-stat">💨 <span>Gust</span> <strong>${gust}</strong></div>
+	  <div class="hero-inline-stat hero-inline-stat--rain">☔ <span>Pioggia</span> <strong>oggi ${rainToday} · rate ${rainRate}</strong></div>
 	  <div class="hero-inline-stat">📈 <span>Pressione</span> <strong>${safeValue(current.barometer)}</strong></div>
 	  <div class="hero-inline-stat">💠 <span>Dew</span> <strong>${safeValue(current.dewPoint)}</strong></div>
 	  <div class="hero-inline-stat hero-inline-stat--uv">☀️ <span>UV</span> <strong class="hero-inline-stat__badge hero-inline-stat__badge--uv">${uvValue}</strong></div>
@@ -1464,16 +1403,34 @@ function renderAqiTile(aqi) {
   const local = aqi?.local || {};
   const area = aqi?.area || {};
 
-  if (tile) {
-    tile.classList.remove('aqi-good', 'aqi-moderate', 'aqi-sensitive', 'aqi-unhealthy', 'aqi-danger', 'aqi-neutral');
-    tile.classList.add(aqiThemeClass(local.aqi));
-  }
+  const localAqiNum = parseNumber(local.aqi);
+  const areaAqiNum = parseNumber(area.aqi);
+  const worstAqi =
+    localAqiNum === null && areaAqiNum === null
+      ? null
+      : localAqiNum === null
+        ? areaAqiNum
+        : areaAqiNum === null
+          ? localAqiNum
+          : Math.max(localAqiNum, areaAqiNum);
 
   const localAqi = local.aqi ?? '--';
   const areaAqi = area.aqi ?? '--';
-  const localState = classifyAqi(local.aqi, local.category);
+  const overallState = classifyAqi(worstAqi, null);
   const comparison = safeValue(aqi?.comparison, 'Confronto non disponibile');
-  const icon = aqiVisualIcon(local.aqi);
+  const icon = aqiVisualIcon(worstAqi);
+
+  if (tile) {
+    tile.classList.remove(
+      'aqi-good',
+      'aqi-moderate',
+      'aqi-sensitive',
+      'aqi-unhealthy',
+      'aqi-danger',
+      'aqi-neutral'
+    );
+    tile.classList.add(aqiThemeClass(worstAqi));
+  }
 
   setHtml('aqi_value', `
     <div class="aqi-visual">
@@ -1496,19 +1453,19 @@ function renderAqiTile(aqi) {
             </div>
           </div>
 
-          <div class="aqi-visual__state">${localState}</div>
+          <div class="aqi-visual__state">${overallState}</div>
         </div>
       </div>
 
       <div class="aqi-visual__pills">
         <span class="aqi-visual__pill">📍 Locale ${localAqi}</span>
         <span class="aqi-visual__pill">🌍 Area ${areaAqi}</span>
-        <span class="aqi-visual__pill">📊 ${comparison}</span>
+        <span class="aqi-visual__pill">⚠️ Worst ${worstAqi ?? '--'}</span>
       </div>
     </div>
   `);
 
-  setText('aqi_summary', `${localState} · ${comparison}`);
+  setText('aqi_summary', `${overallState} · valutazione sul dato peggiore`);
 
   setHtml('aqi_meta', `
     <div class="aqi-info-card">
@@ -1971,9 +1928,8 @@ function bindRadarControls() {
 
 async function loadDashboard() {
   try {
-    const [current, currentCondition, forecastPwsRaw, forecastWuRaw, aqi, alerts, nearby] = await Promise.all([
+    const [current, forecastPwsRaw, forecastWuRaw, aqi, alerts, nearby] = await Promise.all([
       fetchJson('./data/current.json'),
-	  fetchJson('./data/current-condition.json').catch(() => null),
       fetchJson('./data/forecast-pws.json'),
       fetchJson('./data/forecast-wu.json'),
       fetchJson('./data/aqi.json'),
@@ -1982,7 +1938,6 @@ async function loadDashboard() {
     ]);
 
     DASHBOARD_STATE.current = current;
-	DASHBOARD_STATE.currentCondition = currentCondition;
     DASHBOARD_STATE.forecastPws = forecastPwsRaw;
     DASHBOARD_STATE.forecastWu = forecastWuRaw;
     DASHBOARD_STATE.aqi = aqi;
@@ -1993,7 +1948,7 @@ async function loadDashboard() {
     const forecastWu = normalizeForecast(forecastWuRaw);
     const primaryForecast = forecastPws.daily.length ? forecastPws : forecastWu;
 
-    renderHero(current, primaryForecast, currentCondition);
+    renderHero(current, primaryForecast);
     renderTemperatureTile(current);
     renderWindTile(current);
     renderBarometerTile(current);

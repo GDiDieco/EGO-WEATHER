@@ -105,22 +105,75 @@ def build_url(cfg: dict) -> str:
     return f"https://data.api.xweather.com/alerts/{lat},{lon}?{urlencode(params)}"
 
 
+def first_non_empty(*values):
+    for v in values:
+        if v is None:
+            continue
+        if isinstance(v, str):
+            s = v.strip()
+            if s and s.lower() != "unknown":
+                return s
+        else:
+            return v
+    return None
+
 def normalize_alert(item: dict) -> dict:
     details = item.get("details") or {}
     timestamps = item.get("timestamps") or {}
     profile = item.get("profile") or {}
-    body = item.get("body") or item.get("longDesc") or item.get("name")
+    body_data = item.get("body") or {}
+
+    title = first_non_empty(
+        item.get("name"),
+        item.get("event"),
+        item.get("title"),
+        details.get("name"),
+        details.get("event"),
+        details.get("type"),
+        body_data.get("event") if isinstance(body_data, dict) else None,
+        "Allerta meteo"
+    )
+
+    severity = first_non_empty(
+        details.get("severity"),
+        item.get("severity"),
+        item.get("priority"),
+        details.get("type"),
+        body_data.get("severity") if isinstance(body_data, dict) else None,
+        "info"
+    )
+
+    source = first_non_empty(
+        item.get("source"),
+        profile.get("name"),
+        details.get("source"),
+        body_data.get("source") if isinstance(body_data, dict) else None,
+        "Fonte meteo"
+    )
+
+    body = first_non_empty(
+        item.get("longDesc"),
+        item.get("shortDesc"),
+        item.get("body") if isinstance(item.get("body"), str) else None,
+        details.get("body"),
+        details.get("comments"),
+        details.get("location"),
+        details.get("instruction"),
+        body_data.get("description") if isinstance(body_data, dict) else None,
+        body_data.get("body") if isinstance(body_data, dict) else None,
+        "Dettaglio non disponibile"
+    )
 
     return {
-        "id": safe_str(item.get("id")),
-        "title": safe_str(item.get("name"), "Allerta meteo"),
-        "severity": safe_str(details.get("severity"), safe_str(item.get("priority"), "unknown")),
-        "color": safe_str(details.get("color")),
-        "source": safe_str(item.get("source"), safe_str(profile.get("name"), "unknown")),
-        "body": safe_str(body, "Dettaglio non disponibile"),
-        "beginsISO": safe_str(timestamps.get("beginsISO")),
-        "expiresISO": safe_str(timestamps.get("expiresISO")),
-        "issuedISO": safe_str(timestamps.get("issuedISO")),
+        "id": first_non_empty(item.get("id")),
+        "title": title,
+        "severity": severity,
+        "color": first_non_empty(details.get("color"), item.get("color")),
+        "source": source,
+        "body": body,
+        "beginsISO": first_non_empty(timestamps.get("beginsISO")),
+        "expiresISO": first_non_empty(timestamps.get("expiresISO")),
+        "issuedISO": first_non_empty(timestamps.get("issuedISO")),
         "areas": item.get("areas") if isinstance(item.get("areas"), list) else [],
     }
 
